@@ -441,7 +441,8 @@
       "summary": "인공지능이 만들어지는 과정을 체험하고, 인공지능이 사회에 미치는 영향을 탐색한다.",
       "prerequisites": [],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "misconception": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다."
     }
   ]
 }

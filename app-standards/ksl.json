@@ -14,7 +14,9 @@
       "conceptName": "교과서 문장 읽고 이해하기",
       "summary": "교과서에 자주 나오는 문장 구조를 소리 내어 읽고 뜻을 이해하는 것.",
       "prerequisites": [],
-      "successors": ["KSL-읽기-중심내용"],
+      "successors": [
+        "KSL-읽기-중심내용"
+      ],
       "kslLinks": []
     },
     {
@@ -24,7 +26,9 @@
       "domain": "학습 한국어 · 읽기",
       "conceptName": "글에서 중요한 내용 찾기",
       "summary": "교과 글에서 핵심이 되는 문장과 낱말을 찾아 내용을 파악하는 것.",
-      "prerequisites": ["KSL-읽기-기초"],
+      "prerequisites": [
+        "KSL-읽기-기초"
+      ],
       "successors": [],
       "kslLinks": []
     },

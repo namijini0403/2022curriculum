@@ -104,3 +104,68 @@ exportSubject({
   prefix5: "6실", prefix3: "4실", subject: "실과", outFile: "practical-5-6.json",
   sourceLabel: "2022 개정 교육과정 실과(교육부 고시 제2022-33호 별책10) — 초등 5-6만 편성"
 });
+
+// ── 오개념 enrichment: misconception 노드의 실제 실수(>) + 바로잡기(교정법)를
+//    성취기준 코드에 매핑해 모든 app-standards JSON에 misconception/fix로 병합.
+//    (앱 noteBuilder가 mock(오프라인)에서도 큐레이션된 진짜 내용을 쓰도록.)
+function stripWiki(s) {
+  return s.replace(/\[\[([^\]]+)\]\]/g, (_, x) => x.split("|")[0].trim());
+}
+function buildMisconceptionMap() {
+  const map = {};
+  for (const f of readdirSync(NODES).filter((x) => x.endsWith(".md"))) {
+    const t = readFileSync(path.join(NODES, f), "utf8");
+    const fm = (t.match(/^---\n([\s\S]*?)\n---/) || [])[1] || "";
+    if (!/^type:\s*misconception/m.test(fm)) continue;
+    const mistake = (t.match(/^>\s*(.+)$/m) || [])[1] || "";
+    if (!mistake) continue;
+    const codes = new Set();
+    const sm = fm.match(/standards:\s*\[([^\]]*)\]/);
+    if (sm) for (const m of sm[1].matchAll(/"([^"]+)"/g)) codes.add(m[1]);
+    for (const m of t.matchAll(/aligns_to::\s*\[\[([^\]]+)\]\]/g)) {
+      const c = m[1].split("|")[0].trim();
+      if (/^\d[가-힣]\d/.test(c)) codes.add(c);
+    }
+    if (codes.size === 0) continue;
+    // fix: '## 바로잡기' 섹션(큐레이션 교정법) 우선, 없으면 requires(고치는 선수개념) 템플릿
+    let fix = "";
+    const sec = t.match(/##\s*바로잡기[^\n]*\n([\s\S]*?)(?=\n##|\s*$)/);
+    if (sec) {
+      fix = sec[1]
+        .split("\n")
+        .map((l) => l.replace(/^[-*•]\s*/, "").trim())
+        .filter(Boolean)
+        .join(" ");
+    }
+    if (!fix) {
+      const reqs = [...t.matchAll(/requires::\s*\[\[([^\]]+)\]\]/g)].map((m) =>
+        m[1].split("|")[0].trim()
+      );
+      if (reqs.length) fix = `먼저 ‘${reqs[0]}’부터 다시 확인하면 바로잡을 수 있어요.`;
+    }
+    fix = stripWiki(fix);
+    for (const c of codes) if (!map[c]) map[c] = { misconception: mistake, fix };
+  }
+  return map;
+}
+function enrichWithMisconceptions() {
+  const map = buildMisconceptionMap();
+  let total = 0;
+  for (const f of readdirSync(APP).filter((x) => x.endsWith(".json"))) {
+    const p = path.join(APP, f);
+    const doc = JSON.parse(readFileSync(p, "utf8"));
+    let n = 0;
+    for (const node of doc.nodes || []) {
+      const m = map[node.code];
+      if (m) {
+        node.misconception = m.misconception;
+        if (m.fix) node.fix = m.fix;
+        n++;
+      }
+    }
+    writeFileSync(p, JSON.stringify(doc, null, 2) + "\n", "utf8");
+    if (n) console.log(`${f}: +misconception ${n}`);
+  }
+  console.log(`오개념 맵 코드 ${Object.keys(map).length}개 → 병합 노드 ${total || "(파일별 표시)"}`);
+}
+enrichWithMisconceptions();
