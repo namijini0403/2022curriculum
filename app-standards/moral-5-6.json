@@ -1,0 +1,211 @@
+{
+  "_meta": {
+    "source": "2022 개정 교육과정 도덕과(교육부 고시 제2022-33호 별책6) — 성취기준 코드·문구 verbatim. curriculum-kb(20-nodes)에서 자동 export.",
+    "status": "verbatim",
+    "note": "성취기준 코드·문구(summary)는 별책 원문 그대로. prerequisites는 curriculum-kb의 교과 내 결손 체인(standard→standard requires)을 그대로 가져온 것(교사 검수 권장). 5-6 전체 + 결손 체인에 참조되는 3-4만 포함. kslLinks는 후속 보강 대상.",
+    "gradeBandFocus": "5-6"
+  },
+  "nodes": [
+    {
+      "code": "4도01-03",
+      "gradeBand": "3-4",
+      "subject": "도덕",
+      "domain": "자신과의 관계",
+      "conceptName": "성실과 자기 성장",
+      "summary": "성실한 생활의 모범 사례를 탐색하고 시간 관리를 위한 생활을 계획하여 지속적인 자기 성장을 모색한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4도02-03",
+      "gradeBand": "3-4",
+      "subject": "도덕",
+      "domain": "타인과의 관계",
+      "conceptName": "공감",
+      "summary": "공감의 태도가 필요한 이유를 이해하고 도덕적 상상력을 바탕으로 대상과 상황에 따라 감정을 나누는 방법을 탐구하여 실천한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4도03-01",
+      "gradeBand": "3-4",
+      "subject": "도덕",
+      "domain": "사회·공동체와의 관계",
+      "conceptName": "공정",
+      "summary": "불공정의 사례를 탐구하고, 일상생활에서 공정의 가치를 추구하는 활동을 통해 실천 의지를 함양한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4도03-03",
+      "gradeBand": "3-4",
+      "subject": "도덕",
+      "domain": "사회·공동체와의 관계",
+      "conceptName": "통일의 필요성",
+      "summary": "통일의 필요성을 이해하고, 통일 감수성을 길러 바람직한 통일의 방향을 모색한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4도04-02",
+      "gradeBand": "3-4",
+      "subject": "도덕",
+      "domain": "자연과의 관계",
+      "conceptName": "자연과의 공생",
+      "summary": "인간과 자연이 함께 살아야 하는 이유를 이해하고 공생을 위한 구체적인 실천 계획을 세우며 생태 감수성을 기른다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도01-01",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "자신과의 관계",
+      "conceptName": "자주적인 삶",
+      "summary": "자주적인 삶에 대한 이해를 바탕으로 자신의 생활계획을 세우고 실천하여 주체적인 삶의 태도를 기른다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도01-02",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "자신과의 관계",
+      "conceptName": "생활 습관의 성찰",
+      "summary": "생활 습관에 대한 성찰을 통해 자기 생활을 점검하고 올바른 계획을 세워 이를 실천한다.",
+      "prerequisites": [
+        "4도01-03"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도01-03",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "자신과의 관계",
+      "conceptName": "도덕적 진로 선택",
+      "summary": "자기가 하고 싶은 일을 선택할 때 도덕적 고려의 필요성을 알고 자신의 특기와 적성을 탐색하여 진로계획을 수립한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도02-01",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "타인과의 관계",
+      "conceptName": "봉사",
+      "summary": "봉사의 의미와 중요성을 이해하고, 타인이 처한 상황과 환경에 대한 주의 깊은 관심을 바탕으로 봉사를 실천한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도02-02",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "타인과의 관계",
+      "conceptName": "편견 극복과 다양성 존중",
+      "summary": "편견이 발생하는 이유를 탐색하여 해결 방안을 살펴보고, 다양성 존중을 바탕으로 다른 사람과 올바른 관계를 맺기 위한 실천 방안을 탐구한다.",
+      "prerequisites": [
+        "4도02-03"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도02-03",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "타인과의 관계",
+      "conceptName": "인공지능과 도덕적 관계",
+      "summary": "인간과 인공지능 로봇 간의 다양한 관계를 파악하고 도덕에 기반을 둔 관계 형성의 필요성을 탐구한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도03-01",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "사회·공동체와의 관계",
+      "conceptName": "인권 감수성",
+      "summary": "인권과 관련된 다양한 사례를 살펴보고 인권에 관한 감수성을 길러 이를 실천하려는 의지를 함양한다.",
+      "prerequisites": [
+        "4도03-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도03-02",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "사회·공동체와의 관계",
+      "conceptName": "정의와 시민의식",
+      "summary": "정의에 관한 관심을 토대로 공동체 규칙의 중요성을 살펴보고 직접 공정한 규칙을 고안하며 기초적인 시민의식을 기른다.",
+      "prerequisites": [
+        "4도03-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도03-03",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "사회·공동체와의 관계",
+      "conceptName": "바람직한 통일과정",
+      "summary": "통일과정과 통일 이후 사회의 여러 가지 상황을 예상하고 바람직한 통일과정과 통일 국가의 사회상을 제시한다.",
+      "prerequisites": [
+        "4도03-03"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도03-04",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "사회·공동체와의 관계",
+      "conceptName": "인류애",
+      "summary": "다른 나라 사람들이 처한 여러 가지 상황을 종합적으로 이해하고 해결 방안을 탐구하며 인류애를 기른다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도04-01",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "자연과의 관계",
+      "conceptName": "환경 위기 극복",
+      "summary": "지구의 환경 위기 상황을 이해하고, 이를 극복하기 위한 다양한 방안을 찾아 자신의 일상에서 실천하고자 노력한다.",
+      "prerequisites": [
+        "4도04-02"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6도04-02",
+      "gradeBand": "5-6",
+      "subject": "도덕",
+      "domain": "자연과의 관계",
+      "conceptName": "지속가능한 삶",
+      "summary": "지속가능한 삶의 의미를 탐구하고 미래 세대에 대한 책임을 강화하여 자연의 다양성을 존중하고 생산성을 유지할 수 있는 미래를 위한 실천 방안을 찾는다.",
+      "prerequisites": [
+        "6도04-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    }
+  ]
+}

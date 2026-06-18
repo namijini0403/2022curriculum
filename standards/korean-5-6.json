@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "source": "2022 개정 교육과정 국어과 성취기준 (교육부 고시 제2022-33호 별책5). 성취기준 코드·문구는 2022 개정 국어과 성취기준 자료에서 전사함.",
+    "status": "standards-verbatim; prerequisites-inferred",
+    "review": "성취기준 코드·문구는 NCIC(ncic.re.kr) 원문과 최종 대조 권장. 매체 영역[6국06]은 본 시드에 미포함(추가 필요). prerequisites(선수개념) 링크는 교육과정 학년군 계열에 근거한 추론이며 반드시 교사 검수 후 확정할 것.",
+    "gradeBandFocus": "5-6",
+    "domains": {
+      "01": "듣기·말하기",
+      "02": "읽기",
+      "03": "쓰기",
+      "04": "문법",
+      "05": "문학"
+    }
+  },
+  "nodes": [
+    { "code": "4국01-01", "gradeBand": "3-4", "subject": "국어", "domain": "듣기·말하기", "conceptName": "대화 나누기", "summary": "대화의 즐거움을 알고 대화를 나눈다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국01-02", "gradeBand": "3-4", "subject": "국어", "domain": "듣기·말하기", "conceptName": "회의에서 의견 교환", "summary": "회의에서 의견을 적극적으로 교환한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국01-03", "gradeBand": "3-4", "subject": "국어", "domain": "듣기·말하기", "conceptName": "원인과 결과 듣고 말하기", "summary": "원인과 결과의 관계를 고려하며 듣고 말한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국01-04", "gradeBand": "3-4", "subject": "국어", "domain": "듣기·말하기", "conceptName": "표정·몸짓·말투로 말하기", "summary": "적절한 표정, 몸짓, 말투로 말한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국01-05", "gradeBand": "3-4", "subject": "국어", "domain": "듣기·말하기", "conceptName": "내용 요약하며 듣기", "summary": "내용을 요약하며 듣는다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국01-06", "gradeBand": "3-4", "subject": "국어", "domain": "듣기·말하기", "conceptName": "예의 지키며 듣고 말하기", "summary": "예의를 지키며 듣고 말하는 태도를 지닌다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+
+    { "code": "4국02-01", "gradeBand": "3-4", "subject": "국어", "domain": "읽기", "conceptName": "문단·글의 중심 생각 파악", "summary": "문단과 글의 중심 생각을 파악한다.", "prerequisites": [], "successors": [], "kslLinks": ["KSL-읽기-중심내용"] },
+    { "code": "4국02-02", "gradeBand": "3-4", "subject": "국어", "domain": "읽기", "conceptName": "대강의 내용 간추리기", "summary": "글의 유형을 고려하여 대강의 내용을 간추린다.", "prerequisites": [], "successors": [], "kslLinks": ["KSL-읽기-중심내용"] },
+    { "code": "4국02-03", "gradeBand": "3-4", "subject": "국어", "domain": "읽기", "conceptName": "낱말 의미·생략 내용 짐작", "summary": "글에서 낱말의 의미나 생략된 내용을 짐작한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국02-04", "gradeBand": "3-4", "subject": "국어", "domain": "읽기", "conceptName": "사실과 의견 구별", "summary": "글을 읽고 사실과 의견을 구별한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국02-05", "gradeBand": "3-4", "subject": "국어", "domain": "읽기", "conceptName": "읽기 경험 나누기", "summary": "읽기 경험과 느낌을 다른 사람과 나누는 태도를 지닌다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+
+    { "code": "4국03-01", "gradeBand": "3-4", "subject": "국어", "domain": "쓰기", "conceptName": "문단 쓰기", "summary": "중심 문장과 뒷받침 문장을 갖추어 문단을 쓴다.", "prerequisites": [], "successors": [], "kslLinks": ["KSL-쓰기-문장연결"] },
+    { "code": "4국03-02", "gradeBand": "3-4", "subject": "국어", "domain": "쓰기", "conceptName": "시간 흐름 글쓰기", "summary": "시간의 흐름에 따라 사건이나 행동이 드러나게 글을 쓴다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국03-03", "gradeBand": "3-4", "subject": "국어", "domain": "쓰기", "conceptName": "의견이 드러나는 글", "summary": "관심 있는 주제에 대해 자신의 의견이 드러나게 글을 쓴다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국03-04", "gradeBand": "3-4", "subject": "국어", "domain": "쓰기", "conceptName": "마음을 표현하는 글", "summary": "읽는 이를 고려하며 자신의 마음을 표현하는 글을 쓴다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국03-05", "gradeBand": "3-4", "subject": "국어", "domain": "쓰기", "conceptName": "쓰기에 자신감 갖기", "summary": "쓰기에 자신감을 갖고 자신의 글을 적극적으로 나누는 태도를 지닌다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+
+    { "code": "4국04-01", "gradeBand": "3-4", "subject": "국어", "domain": "문법", "conceptName": "낱말 분류·국어사전", "summary": "낱말을 분류하고 국어사전에서 찾는다.", "prerequisites": [], "successors": [], "kslLinks": ["KSL-어휘-학습도구어"] },
+    { "code": "4국04-02", "gradeBand": "3-4", "subject": "국어", "domain": "문법", "conceptName": "낱말의 의미 관계", "summary": "낱말과 낱말의 의미 관계를 파악한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국04-03", "gradeBand": "3-4", "subject": "국어", "domain": "문법", "conceptName": "문장의 짜임", "summary": "기본적인 문장의 짜임을 이해하고 사용한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국04-04", "gradeBand": "3-4", "subject": "국어", "domain": "문법", "conceptName": "높임법", "summary": "높임법을 알고 언어 예절에 맞게 사용한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국04-05", "gradeBand": "3-4", "subject": "국어", "domain": "문법", "conceptName": "한글 소중히 여기기", "summary": "한글을 소중히 여기는 태도를 지닌다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+
+    { "code": "4국05-01", "gradeBand": "3-4", "subject": "국어", "domain": "문학", "conceptName": "감각적 표현 감상", "summary": "시각이나 청각 등 감각적 표현에 주목하며 작품을 감상한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국05-02", "gradeBand": "3-4", "subject": "국어", "domain": "문학", "conceptName": "인물·사건·배경", "summary": "인물, 사건, 배경에 주목하며 작품을 이해한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국05-03", "gradeBand": "3-4", "subject": "국어", "domain": "문학", "conceptName": "이어질 내용 상상", "summary": "이야기의 흐름을 파악하여 이어질 내용을 상상하고 표현한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국05-04", "gradeBand": "3-4", "subject": "국어", "domain": "문학", "conceptName": "느낌·생각 표현", "summary": "작품을 듣거나 읽거나 보고 떠오른 느낌과 생각을 다양하게 표현한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4국05-05", "gradeBand": "3-4", "subject": "국어", "domain": "문학", "conceptName": "작품 즐겨 감상", "summary": "재미나 감동을 느끼며 작품을 즐겨 감상하는 태도를 지닌다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+
+    { "code": "6국01-01", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "구어 의사소통의 특성", "summary": "구어 의사소통의 특성을 바탕으로 하여 듣기·말하기 활동을 한다.", "prerequisites": ["4국01-01"], "successors": [], "kslLinks": [] },
+    { "code": "6국01-02", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "의견 조정하며 토의", "summary": "의견을 제시하고 함께 조정하며 토의한다.", "prerequisites": ["4국01-02"], "successors": [], "kslLinks": [] },
+    { "code": "6국01-03", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "근거 들어 토론", "summary": "절차와 규칙을 지키고 근거를 제시하며 토론한다.", "prerequisites": ["4국01-02", "4국01-03"], "successors": [], "kslLinks": [] },
+    { "code": "6국01-04", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "말할 내용 체계적 구성", "summary": "자료를 정리하여 말할 내용을 체계적으로 구성한다.", "prerequisites": ["4국01-05"], "successors": [], "kslLinks": [] },
+    { "code": "6국01-05", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "매체 활용 발표", "summary": "매체 자료를 활용하여 내용을 효과적으로 발표한다.", "prerequisites": ["4국01-04"], "successors": [], "kslLinks": [] },
+    { "code": "6국01-06", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "추론하며 듣기", "summary": "드러나지 않거나 생략된 내용을 추론하며 듣는다.", "prerequisites": ["4국01-05"], "successors": [], "kslLinks": [] },
+    { "code": "6국01-07", "gradeBand": "5-6", "subject": "국어", "domain": "듣기·말하기", "conceptName": "공감하며 듣기", "summary": "상대가 처한 상황을 이해하고 공감하며 듣는 태도를 지닌다.", "prerequisites": ["4국01-06"], "successors": [], "kslLinks": [] },
+
+    { "code": "6국02-01", "gradeBand": "5-6", "subject": "국어", "domain": "읽기", "conceptName": "배경지식 활용 읽기", "summary": "읽기는 배경지식을 활용하여 의미를 구성하는 과정임을 이해하고 글을 읽는다.", "prerequisites": ["4국02-01"], "successors": [], "kslLinks": ["KSL-읽기-중심내용"] },
+    { "code": "6국02-02", "gradeBand": "5-6", "subject": "국어", "domain": "읽기", "conceptName": "글 구조 고려 요약", "summary": "글의 구조를 고려하여 글 전체의 내용을 요약한다.", "prerequisites": ["4국02-01", "4국02-02"], "successors": [], "kslLinks": ["KSL-읽기-중심내용"] },
+    { "code": "6국02-03", "gradeBand": "5-6", "subject": "국어", "domain": "읽기", "conceptName": "주장·주제 파악", "summary": "글을 읽고 글쓴이가 말하고자 하는 주장이나 주제를 파악한다.", "prerequisites": ["4국02-01", "4국02-04"], "successors": [], "kslLinks": ["KSL-읽기-중심내용"] },
+    { "code": "6국02-04", "gradeBand": "5-6", "subject": "국어", "domain": "읽기", "conceptName": "타당성·적절성 판단", "summary": "글을 읽고 내용의 타당성과 표현의 적절성을 판단한다.", "prerequisites": ["4국02-04"], "successors": [], "kslLinks": [] },
+    { "code": "6국02-05", "gradeBand": "5-6", "subject": "국어", "domain": "읽기", "conceptName": "매체별 읽기 방법", "summary": "매체에 따른 다양한 읽기 방법을 이해하고 적절하게 적용하며 읽는다.", "prerequisites": ["4국02-02"], "successors": [], "kslLinks": [] },
+    { "code": "6국02-06", "gradeBand": "5-6", "subject": "국어", "domain": "읽기", "conceptName": "읽기 습관 점검", "summary": "자신의 읽기 습관을 점검하며 스스로 글을 찾아 읽는 태도를 지닌다.", "prerequisites": ["4국02-05"], "successors": [], "kslLinks": [] },
+
+    { "code": "6국03-01", "gradeBand": "5-6", "subject": "국어", "domain": "쓰기", "conceptName": "쓰기 과정 이해", "summary": "쓰기는 절차에 따라 의미를 구성하고 표현하는 과정임을 이해하고 글을 쓴다.", "prerequisites": ["4국03-01"], "successors": [], "kslLinks": ["KSL-쓰기-문장연결"] },
+    { "code": "6국03-02", "gradeBand": "5-6", "subject": "국어", "domain": "쓰기", "conceptName": "내용·매체 선정 글쓰기", "summary": "목적이나 주제에 따라 알맞은 내용과 매체를 선정하여 글을 쓴다.", "prerequisites": ["4국03-03"], "successors": [], "kslLinks": [] },
+    { "code": "6국03-03", "gradeBand": "5-6", "subject": "국어", "domain": "쓰기", "conceptName": "설명하는 글", "summary": "목적이나 대상에 따라 알맞은 형식과 자료를 사용하여 설명하는 글을 쓴다.", "prerequisites": ["4국03-01", "4국03-02"], "successors": [], "kslLinks": ["KSL-쓰기-문장연결"] },
+    { "code": "6국03-04", "gradeBand": "5-6", "subject": "국어", "domain": "쓰기", "conceptName": "주장하는 글", "summary": "적절한 근거와 알맞은 표현을 사용하여 주장하는 글을 쓴다.", "prerequisites": ["4국03-03", "4국02-04"], "successors": [], "kslLinks": [] },
+    { "code": "6국03-05", "gradeBand": "5-6", "subject": "국어", "domain": "쓰기", "conceptName": "체험 감상 글", "summary": "체험한 일에 대한 감상이 드러나게 글을 쓴다.", "prerequisites": ["4국03-04"], "successors": [], "kslLinks": [] },
+    { "code": "6국03-06", "gradeBand": "5-6", "subject": "국어", "domain": "쓰기", "conceptName": "독자 존중하며 쓰기", "summary": "독자를 존중하고 배려하며 글을 쓰는 태도를 지닌다.", "prerequisites": ["4국03-05"], "successors": [], "kslLinks": [] },
+
+    { "code": "6국04-01", "gradeBand": "5-6", "subject": "국어", "domain": "문법", "conceptName": "언어의 본질", "summary": "언어는 생각을 표현하며 다른 사람과 관계를 맺는 수단임을 이해하고 국어 생활을 한다.", "prerequisites": ["4국04-02"], "successors": [], "kslLinks": [] },
+    { "code": "6국04-02", "gradeBand": "5-6", "subject": "국어", "domain": "문법", "conceptName": "낱말 확장·어휘력", "summary": "국어의 낱말 확장 방법을 탐구하고 어휘력을 높이는 데에 적용한다.", "prerequisites": ["4국04-01", "4국04-02"], "successors": [], "kslLinks": ["KSL-어휘-학습도구어"] },
+    { "code": "6국04-03", "gradeBand": "5-6", "subject": "국어", "domain": "문법", "conceptName": "낱말의 다양한 해석", "summary": "낱말이 상황에 따라 다양하게 해석됨을 탐구한다.", "prerequisites": ["4국04-02"], "successors": [], "kslLinks": [] },
+    { "code": "6국04-04", "gradeBand": "5-6", "subject": "국어", "domain": "문법", "conceptName": "관용 표현", "summary": "관용 표현을 이해하고 적절하게 활용한다.", "prerequisites": ["4국04-02"], "successors": [], "kslLinks": [] },
+    { "code": "6국04-05", "gradeBand": "5-6", "subject": "국어", "domain": "문법", "conceptName": "문장 성분 호응", "summary": "국어의 문장 성분을 이해하고 호응 관계가 올바른 문장을 구성한다.", "prerequisites": ["4국04-03"], "successors": [], "kslLinks": [] },
+    { "code": "6국04-06", "gradeBand": "5-6", "subject": "국어", "domain": "문법", "conceptName": "국어 바르게 사용", "summary": "일상생활에서 국어를 바르게 사용하는 태도를 지닌다.", "prerequisites": ["4국04-04", "4국04-05"], "successors": [], "kslLinks": [] },
+
+    { "code": "6국05-01", "gradeBand": "5-6", "subject": "국어", "domain": "문학", "conceptName": "문학의 본질", "summary": "문학은 가치 있는 내용을 언어로 표현하여 아름다움을 느끼게 하는 활동임을 이해하고 문학 활동을 한다.", "prerequisites": ["4국05-01"], "successors": [], "kslLinks": [] },
+    { "code": "6국05-02", "gradeBand": "5-6", "subject": "국어", "domain": "문학", "conceptName": "작품과 현실 비교 감상", "summary": "작품 속 세계와 현실 세계를 비교하며 작품을 감상한다.", "prerequisites": ["4국05-02"], "successors": [], "kslLinks": [] },
+    { "code": "6국05-03", "gradeBand": "5-6", "subject": "국어", "domain": "문학", "conceptName": "비유적 표현", "summary": "비유적 표현의 특성과 효과를 살려 생각과 느낌을 다양하게 표현한다.", "prerequisites": ["4국05-01"], "successors": [], "kslLinks": [] },
+    { "code": "6국05-04", "gradeBand": "5-6", "subject": "국어", "domain": "문학", "conceptName": "경험을 이야기·극으로", "summary": "일상생활의 경험을 이야기나 극의 형식으로 표현한다.", "prerequisites": ["4국05-03", "4국05-04"], "successors": [], "kslLinks": [] },
+    { "code": "6국05-05", "gradeBand": "5-6", "subject": "국어", "domain": "문학", "conceptName": "작품으로 소통", "summary": "작품에 대한 이해와 감상을 바탕으로 하여 다른 사람과 적극적으로 소통한다.", "prerequisites": ["4국05-04"], "successors": [], "kslLinks": [] },
+    { "code": "6국05-06", "gradeBand": "5-6", "subject": "국어", "domain": "문학", "conceptName": "삶의 가치 내면화", "summary": "작품에서 얻은 깨달음을 바탕으로 하여 바람직한 삶의 가치를 내면화하는 태도를 지닌다.", "prerequisites": ["4국05-05"], "successors": [], "kslLinks": [] }
+  ]
+}

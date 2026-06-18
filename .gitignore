@@ -1,0 +1,16 @@
+# Obsidian 워크스페이스 설정(사용자별) — 레포에 넣지 않음
+.obsidian/
+**/.obsidian/
+
+# 원본 별책 PDF는 포함하지 않음(용량·배포)
+*.pdf
+
+# 임시 생성기/검증 산출물
+_gen_*.mjs
+_v*.txt
+*.tmp
+
+# Node / OS
+node_modules/
+.DS_Store
+Thumbs.db

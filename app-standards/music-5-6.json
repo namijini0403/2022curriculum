@@ -1,0 +1,205 @@
+{
+  "_meta": {
+    "source": "2022 개정 교육과정 음악과(교육부 고시 제2022-33호 별책12) — 성취기준 코드·문구 verbatim. curriculum-kb(20-nodes)에서 자동 export.",
+    "status": "verbatim",
+    "note": "성취기준 코드·문구(summary)는 별책 원문 그대로. prerequisites는 curriculum-kb의 교과 내 결손 체인(standard→standard requires)을 그대로 가져온 것(교사 검수 권장). 5-6 전체 + 결손 체인에 참조되는 3-4만 포함. kslLinks는 후속 보강 대상.",
+    "gradeBandFocus": "5-6"
+  },
+  "nodes": [
+    {
+      "code": "4음01-01",
+      "gradeBand": "3-4",
+      "subject": "음악",
+      "domain": "연주",
+      "conceptName": "바른 자세·주법 연주",
+      "summary": "바른 자세와 주법을 익혀 노래 부르거나 악기로 연주한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4음02-01",
+      "gradeBand": "3-4",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "음악 요소 탐색·반응",
+      "summary": "음악을 듣고 기초적인 음악 요소를 탐색하며 반응한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4음02-05",
+      "gradeBand": "3-4",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "지역 국악 문화유산",
+      "summary": "우리 지역의 음악 문화유산을 찾아 듣고 국악을 즐기는 태도를 갖는다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4음03-02",
+      "gradeBand": "3-4",
+      "subject": "음악",
+      "domain": "창작",
+      "conceptName": "악곡 바꾸어 악보로",
+      "summary": "악곡의 일부를 바꾸어 표현하고 간단한 악보로 나타낸다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음01-01",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "연주",
+      "conceptName": "느낌 담아 연주",
+      "summary": "바른 주법과 표현 기법을 익혀 노래나 악기로 느낌을 담아 연주한다.",
+      "prerequisites": [
+        "4음01-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음01-02",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "연주",
+      "conceptName": "발표하고 과정 성찰",
+      "summary": "음악 요소를 살려 노래나 악기로 발표하고 과정을 돌아본다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음01-03",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "연주",
+      "conceptName": "소리의 어울림 표현",
+      "summary": "소리의 어울림을 생각하며 다양한 방법으로 함께 표현한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음01-04",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "연주",
+      "conceptName": "생활 속 음악 활동 참여",
+      "summary": "간단한 형태의 연주를 준비하여 생활 속 음악 활동에 참여한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음02-01",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "음악 요소 감지·구별",
+      "summary": "음악을 듣고 음악의 요소를 감지하며 구별한다.",
+      "prerequisites": [
+        "4음02-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음02-02",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "문화권 음악과 구성",
+      "summary": "다양한 문화권의 음악을 듣고 음악적 특징과 음악의 간단한 구성을 인식한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음02-03",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "음악의 배경·활용 설명",
+      "summary": "다양한 종류의 음악을 듣고 음악의 배경과 활용을 설명한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음02-04",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "음악의 아름다움 공감",
+      "summary": "생활 속에서 음악을 찾아 들으며 아름다움을 느끼고 공감한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음02-05",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "감상",
+      "conceptName": "국악의 가치 인식",
+      "summary": "우리나라 음악 문화유산을 찾아 듣고 국악의 가치를 인식한다.",
+      "prerequisites": [
+        "4음02-05"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음03-01",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "창작",
+      "conceptName": "자신감 있게 표현",
+      "summary": "느낌과 아이디어를 떠올려 여러 매체나 방법으로 자신감 있게 표현한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음03-02",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "창작",
+      "conceptName": "기보로 악곡 바꾸기",
+      "summary": "기초적인 기보를 활용하여 간단한 조건에 따라 악곡의 일부를 바꾼다.",
+      "prerequisites": [
+        "4음03-02"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음03-03",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "창작",
+      "conceptName": "음악 요소로 창작",
+      "summary": "음악의 요소를 활용하여 간단한 음악을 만든다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6음03-04",
+      "gradeBand": "5-6",
+      "subject": "음악",
+      "domain": "창작",
+      "conceptName": "상황·이야기로 창작",
+      "summary": "생활 주변 상황이나 이야기를 활용하여 음악을 만들며 열린 태도를 갖는다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    }
+  ]
+}

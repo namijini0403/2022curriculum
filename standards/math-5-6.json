@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "source": "2022 개정 교육과정 수학과(교육부 고시 제2022-33호 별책8) 기반.",
+    "status": "concepts-curated; codes-and-wording-provisional",
+    "review": "⚠️ 국어 시드와 달리 이 수학 시드는 verbatim 원문 확보 없이 AI가 재구성함. 개념명·요약·선수개념 계열은 검수됨(데모용으로 신뢰 가능, /review UI는 코드가 아닌 개념명을 표시). 그러나 성취기준 코드 번호와 공식 문구는 잠정값이므로 NCIC(ncic.re.kr) 원문 대조 후 확정할 것. prerequisites도 교육과정 계열 기반 추론 → 교사 검수 필요.",
+    "gradeBandFocus": "5-6",
+    "domains": {
+      "01": "수와 연산",
+      "02": "변화와 관계",
+      "03": "도형과 측정",
+      "04": "자료와 가능성"
+    }
+  },
+  "nodes": [
+    { "code": "4수01-01", "gradeBand": "3-4", "subject": "수학", "domain": "수와 연산", "conceptName": "분수의 의미와 크기", "summary": "전체를 똑같이 나눈 부분으로서 분수의 의미를 알고 크기를 비교한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수01-02", "gradeBand": "3-4", "subject": "수학", "domain": "수와 연산", "conceptName": "분모가 같은 분수의 덧셈과 뺄셈", "summary": "분모가 같은 분수끼리 더하고 빼는 방법을 안다.", "prerequisites": ["4수01-01"], "successors": [], "kslLinks": [] },
+    { "code": "4수01-03", "gradeBand": "3-4", "subject": "수학", "domain": "수와 연산", "conceptName": "소수의 의미와 덧셈·뺄셈", "summary": "소수의 의미를 알고 소수의 덧셈과 뺄셈을 한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수01-04", "gradeBand": "3-4", "subject": "수학", "domain": "수와 연산", "conceptName": "자연수의 곱셈", "summary": "여러 자리 수의 곱셈의 계산 원리를 이해하고 계산한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수01-05", "gradeBand": "3-4", "subject": "수학", "domain": "수와 연산", "conceptName": "자연수의 나눗셈", "summary": "나눗셈의 몫과 나머지를 구하고 계산한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수02-01", "gradeBand": "3-4", "subject": "수학", "domain": "변화와 관계", "conceptName": "규칙 찾기", "summary": "수나 모양의 배열에서 규칙을 찾아 설명한다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수03-01", "gradeBand": "3-4", "subject": "수학", "domain": "도형과 측정", "conceptName": "평면도형(삼각형·사각형·각도)", "summary": "여러 가지 삼각형·사각형의 성질과 각도를 안다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수03-02", "gradeBand": "3-4", "subject": "수학", "domain": "도형과 측정", "conceptName": "원의 구성 요소", "summary": "원의 중심, 반지름, 지름을 알고 원을 그린다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+    { "code": "4수04-01", "gradeBand": "3-4", "subject": "수학", "domain": "자료와 가능성", "conceptName": "막대그래프와 꺾은선그래프", "summary": "자료를 막대그래프·꺾은선그래프로 나타내고 읽는다.", "prerequisites": [], "successors": [], "kslLinks": [] },
+
+    { "code": "6수01-01", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "약수와 배수", "summary": "약수와 배수의 의미를 알고, 약수와 배수의 관계를 이해한다.", "prerequisites": ["4수01-04", "4수01-05"], "successors": [], "kslLinks": ["KSL-어휘-학습도구어"] },
+    { "code": "6수01-02", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "공약수와 공배수", "summary": "공약수와 최대공약수, 공배수와 최소공배수의 의미를 알고 구한다.", "prerequisites": ["6수01-01"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-03", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "약분과 통분", "summary": "분수의 성질을 이용하여 크기가 같은 분수를 만들고 약분과 통분을 한다.", "prerequisites": ["6수01-02", "4수01-01"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-04", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "분모가 다른 분수의 덧셈과 뺄셈", "summary": "분모가 다른 분수를 통분하여 덧셈과 뺄셈을 한다.", "prerequisites": ["6수01-03", "4수01-02"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-05", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "분수의 곱셈", "summary": "분수의 곱셈의 계산 원리를 이해하고 계산한다.", "prerequisites": ["4수01-01", "4수01-04"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-06", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "분수의 나눗셈", "summary": "분수의 나눗셈의 계산 원리를 이해하고 계산한다.", "prerequisites": ["6수01-05", "6수01-03"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-07", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "소수의 곱셈", "summary": "소수의 곱셈의 계산 원리를 이해하고 계산한다.", "prerequisites": ["4수01-03", "4수01-04"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-08", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "소수의 나눗셈", "summary": "소수의 나눗셈의 계산 원리를 이해하고 계산한다.", "prerequisites": ["6수01-07", "4수01-05"], "successors": [], "kslLinks": [] },
+    { "code": "6수01-09", "gradeBand": "5-6", "subject": "수학", "domain": "수와 연산", "conceptName": "자연수의 혼합 계산", "summary": "덧셈, 뺄셈, 곱셈, 나눗셈이 섞인 식의 계산 순서를 알고 계산한다.", "prerequisites": ["4수01-04", "4수01-05"], "successors": [], "kslLinks": [] },
+
+    { "code": "6수02-01", "gradeBand": "5-6", "subject": "수학", "domain": "변화와 관계", "conceptName": "규칙과 대응", "summary": "두 양 사이의 대응 관계를 찾아 식으로 나타낸다.", "prerequisites": ["4수02-01"], "successors": [], "kslLinks": [] },
+    { "code": "6수02-02", "gradeBand": "5-6", "subject": "수학", "domain": "변화와 관계", "conceptName": "비와 비율", "summary": "비와 비율의 의미를 알고 여러 가지 방법으로 나타낸다.", "prerequisites": ["6수01-06", "4수01-01"], "successors": [], "kslLinks": ["KSL-어휘-학습도구어"] },
+    { "code": "6수02-03", "gradeBand": "5-6", "subject": "수학", "domain": "변화와 관계", "conceptName": "백분율", "summary": "백분율의 의미를 알고 비율을 백분율로 나타낸다.", "prerequisites": ["6수02-02"], "successors": [], "kslLinks": [] },
+    { "code": "6수02-04", "gradeBand": "5-6", "subject": "수학", "domain": "변화와 관계", "conceptName": "비례식과 비례배분", "summary": "비례식의 성질을 이해하고 비례배분을 한다.", "prerequisites": ["6수02-02"], "successors": [], "kslLinks": [] },
+
+    { "code": "6수03-01", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "합동과 대칭", "summary": "도형의 합동과 선대칭·점대칭의 성질을 이해한다.", "prerequisites": ["4수03-01"], "successors": [], "kslLinks": [] },
+    { "code": "6수03-02", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "직육면체와 정육면체", "summary": "직육면체와 정육면체의 구성 요소와 성질을 안다.", "prerequisites": ["4수03-01"], "successors": [], "kslLinks": [] },
+    { "code": "6수03-03", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "각기둥과 각뿔", "summary": "각기둥과 각뿔의 구성 요소와 성질을 안다.", "prerequisites": ["6수03-02"], "successors": [], "kslLinks": [] },
+    { "code": "6수03-04", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "원기둥·원뿔·구", "summary": "원기둥, 원뿔, 구의 구성 요소와 성질을 안다.", "prerequisites": ["4수03-02"], "successors": [], "kslLinks": [] },
+    { "code": "6수03-05", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "원주율과 원의 넓이", "summary": "원주율을 이해하고 원의 둘레와 넓이를 구한다.", "prerequisites": ["4수03-02"], "successors": [], "kslLinks": [] },
+    { "code": "6수03-06", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "다각형의 둘레와 넓이", "summary": "여러 가지 다각형의 둘레와 넓이를 구한다.", "prerequisites": ["4수03-01"], "successors": [], "kslLinks": [] },
+    { "code": "6수03-07", "gradeBand": "5-6", "subject": "수학", "domain": "도형과 측정", "conceptName": "직육면체의 부피와 겉넓이", "summary": "직육면체와 정육면체의 부피와 겉넓이를 구한다.", "prerequisites": ["6수03-02", "6수03-06"], "successors": [], "kslLinks": [] },
+
+    { "code": "6수04-01", "gradeBand": "5-6", "subject": "수학", "domain": "자료와 가능성", "conceptName": "평균", "summary": "평균의 의미를 알고 자료의 평균을 구한다.", "prerequisites": ["4수04-01"], "successors": [], "kslLinks": ["KSL-어휘-학습도구어"] },
+    { "code": "6수04-02", "gradeBand": "5-6", "subject": "수학", "domain": "자료와 가능성", "conceptName": "띠그래프와 원그래프", "summary": "자료를 띠그래프와 원그래프로 나타내고 해석한다.", "prerequisites": ["4수04-01", "6수02-03"], "successors": [], "kslLinks": [] },
+    { "code": "6수04-03", "gradeBand": "5-6", "subject": "수학", "domain": "자료와 가능성", "conceptName": "사건이 일어날 가능성", "summary": "사건이 일어날 가능성을 말이나 수로 표현한다.", "prerequisites": ["6수02-02"], "successors": [], "kslLinks": [] }
+  ]
+}

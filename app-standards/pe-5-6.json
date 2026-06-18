@@ -1,0 +1,374 @@
+{
+  "_meta": {
+    "source": "2022 개정 교육과정 체육과(교육부 고시 제2022-33호 별책11) — 성취기준 코드·문구 verbatim. curriculum-kb(20-nodes)에서 자동 export.",
+    "status": "verbatim",
+    "note": "성취기준 코드·문구(summary)는 별책 원문 그대로. prerequisites는 curriculum-kb의 교과 내 결손 체인(standard→standard requires)을 그대로 가져온 것(교사 검수 권장). 5-6 전체 + 결손 체인에 참조되는 3-4만 포함. kslLinks는 후속 보강 대상.",
+    "gradeBandFocus": "5-6"
+  },
+  "nodes": [
+    {
+      "code": "4체01-01",
+      "gradeBand": "3-4",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "운동과 체력의 의미",
+      "summary": "운동과 체력의 의미를 이해하고 관계를 파악한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4체01-03",
+      "gradeBand": "3-4",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "운동과 건강의 관계",
+      "summary": "운동과 건강의 의미를 이해하고 관계를 파악한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4체02-05",
+      "gradeBand": "3-4",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "기술형 스포츠 움직임",
+      "summary": "기술형 스포츠에 적합한 기본 움직임 기술을 파악하고 시도한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4체02-06",
+      "gradeBand": "3-4",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "전략형 스포츠 움직임",
+      "summary": "전략형 스포츠에 적합한 기본 움직임 기술을 파악하고 시도한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4체02-07",
+      "gradeBand": "3-4",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "생태형 스포츠 움직임",
+      "summary": "생태형 스포츠에 적합한 기본 움직임 기술을 파악하고 시도한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "4체03-01",
+      "gradeBand": "3-4",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "표현 활동의 의미",
+      "summary": "표현 활동의 의미와 기본 움직임 기술과의 관계를 파악한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체01-01",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "건강·운동 체력 요소",
+      "summary": "건강 체력과 운동 체력의 의미와 요소를 파악하고 다양한 운동 방법을 탐색한다.",
+      "prerequisites": [
+        "4체01-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체01-02",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "체력 측정과 운동",
+      "summary": "건강 체력과 운동 체력을 측정하고 자신의 체력 수준에 맞는 운동을 시도한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체01-03",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "성장 발달과 운동",
+      "summary": "성장 발달의 의미와 특성을 이해하고 운동과의 관계를 파악한다.",
+      "prerequisites": [
+        "4체01-03"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체01-04",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "위험 상황 예방·대처",
+      "summary": "운동 및 생활 속 위험 상황, 성장 발달을 저해하는 생활 방식의 문제점을 파악하고 예방 및 대처 방법을 익혀 안전하게 활동한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체01-05",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "체력 운동 규칙적 수행",
+      "summary": "체력 운동을 끈기 있게 규칙적으로 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체01-06",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "운동",
+      "conceptName": "성장 차이 공감·대처",
+      "summary": "성장과 발달 과정에서 나타나는 신체적, 정서적, 사회적 특성과 차이를 공감하고 위험 상황에 침착하게 대처한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-01",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "기술형 스포츠 의미",
+      "summary": "기술형 스포츠의 의미와 유형을 파악한다.",
+      "prerequisites": [
+        "4체02-05"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-02",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "기술형 기본 기능",
+      "summary": "기술형 스포츠 유형별로 기본 움직임 기술을 응용한 기본 기능을 파악하고 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-03",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "기술형 전략 수행",
+      "summary": "기술형 스포츠 유형별 활동 방법을 파악하고 기본 전략을 게임 활동에서 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-04",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "전략형 스포츠 의미",
+      "summary": "전략형 스포츠의 의미와 유형을 파악한다.",
+      "prerequisites": [
+        "4체02-06"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-05",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "전략형 기본 기능",
+      "summary": "전략형 스포츠 유형별로 기본 움직임 기술을 응용한 기본 기능을 파악하고 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-06",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "전략형 전략 수행",
+      "summary": "전략형 스포츠 유형별 활동 방법을 파악하고 기본 전략을 게임 활동에서 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-07",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "생태형 스포츠 의미",
+      "summary": "생태형 스포츠의 의미와 유형을 파악한다.",
+      "prerequisites": [
+        "4체02-07"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-08",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "생태형 기본 기능",
+      "summary": "생태형 스포츠 유형별로 기본 움직임 기술을 응용한 기본 기능을 파악하고 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-09",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "생태형 전략 수행",
+      "summary": "생태형 스포츠 유형별 활동 방법을 파악하고 기본 전략을 게임 활동에서 수행한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-10",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "목표 의지와 상대 인정",
+      "summary": "스포츠 활동에 참여하며 목표를 달성하기 위한 의지를 실천하고 상대의 기술을 인정한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-11",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "팀워크와 배려",
+      "summary": "스포츠 활동에 참여하며 팀원과 협력하고 구성원을 배려한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체02-12",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "스포츠",
+      "conceptName": "스포츠 환경 감사",
+      "summary": "스포츠 활동에 참여하며 환경을 아끼고 감사하는 태도를 실천한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-01",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "표현 활동 의미와 유형",
+      "summary": "표현 활동의 의미와 유형을 파악한다.",
+      "prerequisites": [
+        "4체03-01"
+      ],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-02",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "스포츠 표현 동작",
+      "summary": "스포츠 표현에서 움직임 기술을 응용한 기본 동작을 파악하고 표현한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-03",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "스포츠 표현 구성",
+      "summary": "스포츠 표현의 기본 동작을 다양하게 구성하여 발표하고 감상한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-04",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "전통 표현 동작",
+      "summary": "전통 표현에서 움직임 기술을 응용한 기본 동작을 파악하고 표현한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-05",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "전통 표현 구성",
+      "summary": "전통 표현의 기본 동작을 다양하게 구성하여 발표하고 감상한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-06",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "현대 표현 동작",
+      "summary": "현대 표현에서 움직임 기술을 응용한 기본 동작을 파악하고 표현한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-07",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "현대 표현 구성",
+      "summary": "현대 표현의 기본 동작을 다양하게 구성하여 발표하고 감상한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "6체03-08",
+      "gradeBand": "5-6",
+      "subject": "체육",
+      "domain": "표현",
+      "conceptName": "표현 다양성 수용",
+      "summary": "다양한 표현 활동 유형을 수용하고, 움직임 표현의 아름다움을 추구한다.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    }
+  ]
+}

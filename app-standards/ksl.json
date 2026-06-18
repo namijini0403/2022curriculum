@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "source": "한국어 교육과정(KSL, 교육부 고시) 기반 SEED 데이터",
+    "status": "draft-needs-review",
+    "review": "KSL 성취기준 원문(생활 한국어/학습 한국어)과 대조하고, 국어 교과 성취기준과의 kslLinks 매핑은 다문화 담당 교사 검수 후 확정할 것.",
+    "note": "다문화 학생의 '교과 한국어' 결손 보완용. 국어 노드의 kslLinks가 이 노드들을 가리킨다."
+  },
+  "nodes": [
+    {
+      "code": "KSL-읽기-기초",
+      "gradeBand": "5-6",
+      "subject": "KSL",
+      "domain": "학습 한국어 · 읽기",
+      "conceptName": "교과서 문장 읽고 이해하기",
+      "summary": "교과서에 자주 나오는 문장 구조를 소리 내어 읽고 뜻을 이해하는 것.",
+      "prerequisites": [],
+      "successors": ["KSL-읽기-중심내용"],
+      "kslLinks": []
+    },
+    {
+      "code": "KSL-읽기-중심내용",
+      "gradeBand": "5-6",
+      "subject": "KSL",
+      "domain": "학습 한국어 · 읽기",
+      "conceptName": "글에서 중요한 내용 찾기",
+      "summary": "교과 글에서 핵심이 되는 문장과 낱말을 찾아 내용을 파악하는 것.",
+      "prerequisites": ["KSL-읽기-기초"],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "KSL-쓰기-문장연결",
+      "gradeBand": "5-6",
+      "subject": "KSL",
+      "domain": "학습 한국어 · 쓰기",
+      "conceptName": "문장을 이어 짧은 글 쓰기",
+      "summary": "이어 주는 말(그리고, 그래서, 하지만)을 써서 문장을 자연스럽게 연결하는 것.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    },
+    {
+      "code": "KSL-어휘-학습도구어",
+      "gradeBand": "5-6",
+      "subject": "KSL",
+      "domain": "학습 한국어 · 어휘",
+      "conceptName": "학습 도구 어휘 익히기",
+      "summary": "여러 교과에 두루 쓰이는 말(비교하다, 분류하다, 까닭, 특징 등)의 뜻을 익히는 것.",
+      "prerequisites": [],
+      "successors": [],
+      "kslLinks": []
+    }
+  ]
+}
