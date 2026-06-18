@@ -105,6 +105,54 @@ exportSubject({
   sourceLabel: "2022 개정 교육과정 실과(교육부 고시 제2022-33호 별책10) — 초등 5-6만 편성"
 });
 
+// ── KSL(한국어) export: 단계(level) 구조라 코드형 교과(exportSubject)와 다르게 처리.
+//    6단계 × 4영역(듣기·말하기·읽기·쓰기) 성취기준 verbatim + 학습 한국어 브릿지 concept.
+function exportKSL() {
+  const LEVEL_TO_BAND = { 1: "1-2", 2: "1-2", 3: "3-4", 4: "3-4", 5: "5-6", 6: "5-6" };
+  const files = readdirSync(NODES).filter((f) => f.endsWith(".md"));
+  const nodes = [];
+  for (const f of files) {
+    const t = readFileSync(path.join(NODES, f), "utf8");
+    const fm = (t.match(/^---\n([\s\S]*?)\n---/) || [])[1] || "";
+    const g = (k) => (fm.match(new RegExp(`^${k}:\\s*"?([^"\\n]+)"?`, "m")) || [])[1];
+    if (g("subject") !== "KSL") continue;
+    const type = g("type");
+    if (type !== "standard" && type !== "concept") continue;
+    const quote = (t.match(/^>\s*(.+)$/m) || [])[1] || "";
+    const level = g("level");
+    const domain = g("domain") || "";
+    // 별책41 ingest 시 standard 노드의 title이 잘려 저장됨(summary는 verbatim 전문).
+    // standard는 '5단계 읽기'식 깔끔한 라벨, fine concept는 온전한 개념명을 쓴다.
+    const conceptName = level ? `${level}단계 ${domain}` : g("title");
+    nodes.push({
+      code: g("id"),
+      gradeBand: g("gradeBand") || (level ? LEVEL_TO_BAND[Number(level)] : "5-6"),
+      subject: "KSL",
+      domain,
+      conceptName,
+      summary: quote || g("summary") || "",
+      prerequisites: [],
+      successors: [],
+      kslLinks: [],
+      ...(level ? { level: Number(level) } : {})
+    });
+  }
+  nodes.sort((a, b) => a.code.localeCompare(b.code, "ko"));
+  const doc = {
+    _meta: {
+      source:
+        "2022 개정 교육과정 한국어(KSL)(교육부 고시 제2022-33호 별책41) — 6단계 성취기준 코드·문구 verbatim. curriculum-kb(20-nodes)에서 자동 export.",
+      status: "verbatim",
+      note: "생활·학습 한국어 6단계(1~6) × 4영역(듣기·말하기·읽기·쓰기) 성취기준 verbatim. 단계→학년군: 1·2단계=1-2, 3·4단계=3-4, 5·6단계=5-6. KSL-교과학습한국어는 국어↔KSL 결손 브릿지 concept(국어 노드의 kslLinks 대상). kslLinks 매핑은 다문화 담당 교사 검수 권장, 코드·문구는 NCIC 원문 대조 권장.",
+      levels: LEVEL_TO_BAND
+    },
+    nodes
+  };
+  writeFileSync(path.join(APP, "ksl.json"), JSON.stringify(doc, null, 2) + "\n", "utf8");
+  console.log(`ksl.json: ${nodes.length} nodes (6단계 × 4영역 + 학습한국어 concept)`);
+}
+exportKSL();
+
 // ── 오개념 enrichment: misconception 노드의 실제 실수(>) + 바로잡기(교정법)를
 //    성취기준 코드에 매핑해 모든 app-standards JSON에 misconception/fix로 병합.
 //    (앱 noteBuilder가 mock(오프라인)에서도 큐레이션된 진짜 내용을 쓰도록.)
