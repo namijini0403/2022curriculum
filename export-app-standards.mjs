@@ -247,6 +247,10 @@ function enrichWithMisconceptions() {
       if (m) {
         node.misconception = m.misconception;
         if (m.fix) node.fix = m.fix;
+        // P4 — 구조화 병렬 컨테이너(DRACONIS concept_relations.error_related와 1:1). flat 필드는 하위호환 유지.
+        node.misconceptionEdges = [
+          { to: node.code, type: "error_related", errorPattern: m.misconception, ...(m.fix ? { fix: m.fix } : {}) },
+        ];
         n++;
       }
     }

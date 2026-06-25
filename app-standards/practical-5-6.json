@@ -439,7 +439,14 @@
       "prerequisites": [],
       "successors": [],
       "kslLinks": [],
-      "misconception": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다."
+      "misconception": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다.",
+      "misconceptionEdges": [
+        {
+          "to": "6실05-04",
+          "type": "error_related",
+          "errorPattern": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다."
+        }
+      ]
     },
     {
       "code": "6실05-05",
@@ -451,7 +458,14 @@
       "prerequisites": [],
       "successors": [],
       "kslLinks": [],
-      "misconception": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다."
+      "misconception": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다.",
+      "misconceptionEdges": [
+        {
+          "to": "6실05-05",
+          "type": "error_related",
+          "errorPattern": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다."
+        }
+      ]
     }
   ]
 }

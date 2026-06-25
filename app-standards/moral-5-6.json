@@ -45,7 +45,14 @@
         "6도03-02"
       ],
       "kslLinks": [],
-      "misconception": "공정을 늘 똑같이 나누는 것으로만 보아 처지가 다른 사람에 대한 배려를 놓친다."
+      "misconception": "공정을 늘 똑같이 나누는 것으로만 보아 처지가 다른 사람에 대한 배려를 놓친다.",
+      "misconceptionEdges": [
+        {
+          "to": "4도03-01",
+          "type": "error_related",
+          "errorPattern": "공정을 늘 똑같이 나누는 것으로만 보아 처지가 다른 사람에 대한 배려를 놓친다."
+        }
+      ]
     },
     {
       "code": "4도03-03",

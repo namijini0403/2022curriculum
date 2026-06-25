@@ -1,0 +1,1055 @@
+{
+  "_meta": {
+    "source": "2022 개정 교육과정 수학과(교육부 고시 제2022-33호 별책8) — 1-2학년군 성취기준 코드·문구 verbatim. curriculum-kb(20-nodes)에서 도출.",
+    "status": "verbatim",
+    "note": "성취기준 코드와 문구(summary)는 별책8 원문 그대로. prerequisites는 1-2학년군 내부 결손 체인(교육과정 계열 기반, status:inferred — 교사 검수 권장). 1-2는 학교 수학의 floor이므로 진입 노드는 prereqNote로 선수 없음을 명시. prereqEdges는 근거(rationale) 포함 병렬 필드, successors는 자동 파생.",
+    "gradeBandFocus": "1-2",
+    "domains": {
+      "01": "수와 연산",
+      "02": "변화와 관계",
+      "03": "도형과 측정",
+      "04": "자료와 가능성"
+    }
+  },
+  "nodes": [
+    {
+      "code": "2수01-01",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "100까지의 수",
+      "summary": "수의 필요성을 인식하면서 0과 100까지의 수 개념을 이해하고, 수를 세고 읽고 쓸 수 있다.",
+      "prerequisites": [],
+      "successors": [
+        "2수01-02",
+        "2수01-04",
+        "2수03-07"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 1-2학년군 수와 연산의 시작 노드(선수 성취기준 없음, 수 세기에서 출발).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수01-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "네 자리 이하 수의 자릿값은 0과 100까지의 수 개념 위에서 천의 자리까지 확장된다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수01-04",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "수를 두 수로 분해·합성하려면 100까지의 수 개념과 수 세기가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수03-07",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "'몇 시 몇 분'을 읽으려면 100까지의 수를 세고 읽을 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수01-02",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "네 자리 이하의 수",
+      "summary": "일, 십, 백, 천의 자릿값과 위치적 기수법을 이해하고, 네 자리 이하의 수를 읽고 쓸 수 있다.",
+      "prerequisites": [
+        "2수01-01"
+      ],
+      "successors": [
+        "2수01-03",
+        "2수01-06"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "네 자리 이하 수의 자릿값은 0과 100까지의 수 개념 위에서 천의 자리까지 확장된다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "misconception": "23에서 2를 '이십'이 아니라 '둘'로 보아 큰 수·받아올림 계산을 틀린다.",
+      "fix": "먼저 ‘자릿값’부터 다시 확인하면 바로잡을 수 있어요.",
+      "successorEdges": [
+        {
+          "to": "2수01-03",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "네 자리 이하 수의 계열·크기 비교는 자릿값과 위치적 기수법 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수01-06",
+          "type": "supports",
+          "strength": 0.75,
+          "rationale": "받아올림·받아내림을 다루려면 자릿값(네 자리 이하 수)의 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "2수01-02",
+          "type": "error_related",
+          "errorPattern": "23에서 2를 '이십'이 아니라 '둘'로 보아 큰 수·받아올림 계산을 틀린다.",
+          "fix": "먼저 ‘자릿값’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
+    },
+    {
+      "code": "2수01-03",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "수의 계열과 크기 비교",
+      "summary": "네 자리 이하의 수의 범위에서 수의 계열을 이해하고, 수의 크기를 비교할 수 있다.",
+      "prerequisites": [
+        "2수01-02"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "네 자리 이하 수의 계열·크기 비교는 자릿값과 위치적 기수법 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수01-04",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "수의 분해와 합성",
+      "summary": "하나의 수를 두 수로 분해하고 두 수를 하나의 수로 합성하는 활동을 통하여 수 감각을 기른다.",
+      "prerequisites": [
+        "2수01-01"
+      ],
+      "successors": [
+        "2수01-05"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "수를 두 수로 분해·합성하려면 100까지의 수 개념과 수 세기가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수01-05",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "덧셈·뺄셈의 의미는 수의 분해·합성으로 기른 수 감각 위에서 이해된다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수01-05",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "덧셈과 뺄셈의 의미",
+      "summary": "덧셈과 뺄셈이 이루어지는 실생활 상황과 연결하여 덧셈과 뺄셈의 의미를 이해한다.",
+      "prerequisites": [
+        "2수01-04"
+      ],
+      "successors": [
+        "2수01-06",
+        "2수01-10"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-04",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "덧셈·뺄셈의 의미는 수의 분해·합성으로 기른 수 감각 위에서 이해된다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "두 자리 수의 덧셈·뺄셈은 덧셈·뺄셈의 의미 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수01-10",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "곱셈의 의미는 같은 수를 여러 번 더하는 덧셈의 의미 위에서 이해된다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수01-06",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "두 자리 수 덧셈과 뺄셈",
+      "summary": "두 자리 수의 범위에서 덧셈과 뺄셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
+      "prerequisites": [
+        "2수01-05",
+        "2수01-02"
+      ],
+      "successors": [
+        "2수01-07",
+        "2수01-08",
+        "2수03-13"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-05",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "두 자리 수의 덧셈·뺄셈은 덧셈·뺄셈의 의미 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수01-02",
+          "type": "supports",
+          "strength": 0.75,
+          "rationale": "받아올림·받아내림을 다루려면 자릿값(네 자리 이하 수)의 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "misconception": "27+15에서 올림을 빠뜨려 312처럼 자리별로 적어 버린다.",
+      "fix": "먼저 ‘받아올림’부터 다시 확인하면 바로잡을 수 있어요.",
+      "successorEdges": [
+        {
+          "to": "2수01-07",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "덧셈과 뺄셈의 관계는 두 자리 수 덧셈·뺄셈의 계산 경험 위에서 이해된다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수01-08",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "세 수의 덧셈·뺄셈은 두 자리 수 덧셈·뺄셈을 차례로 적용하는 것이다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수03-13",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "길이의 덧셈·뺄셈 계산에는 두 자리 수 덧셈·뺄셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "2수01-06",
+          "type": "error_related",
+          "errorPattern": "27+15에서 올림을 빠뜨려 312처럼 자리별로 적어 버린다.",
+          "fix": "먼저 ‘받아올림’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
+    },
+    {
+      "code": "2수01-07",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "덧셈과 뺄셈의 관계",
+      "summary": "덧셈과 뺄셈의 관계를 이해한다.",
+      "prerequisites": [
+        "2수01-06"
+      ],
+      "successors": [
+        "2수01-09"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "덧셈과 뺄셈의 관계는 두 자리 수 덧셈·뺄셈의 계산 경험 위에서 이해된다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수01-09",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "□가 사용된 식에서 □의 값을 구하려면 덧셈과 뺄셈의 관계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수01-08",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "세 수의 덧셈과 뺄셈",
+      "summary": "두 자리 수의 범위에서 세 수의 덧셈과 뺄셈을 할 수 있다.",
+      "prerequisites": [
+        "2수01-06"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "세 수의 덧셈·뺄셈은 두 자리 수 덧셈·뺄셈을 차례로 적용하는 것이다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수01-09",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "□가 사용된 식",
+      "summary": "□가 사용된 덧셈식과 뺄셈식을 만들고, □의 값을 구할 수 있다.",
+      "prerequisites": [
+        "2수01-07"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-07",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "□가 사용된 식에서 □의 값을 구하려면 덧셈과 뺄셈의 관계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수01-10",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "곱셈의 의미",
+      "summary": "곱셈이 이루어지는 실생활 상황과 연결하여 곱셈의 의미를 이해한다.",
+      "prerequisites": [
+        "2수01-05"
+      ],
+      "successors": [
+        "2수01-11"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-05",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "곱셈의 의미는 같은 수를 여러 번 더하는 덧셈의 의미 위에서 이해된다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "misconception": "3×4(=3을 4번 더함)를 3+4=7로 잘못 계산한다.",
+      "fix": "먼저 ‘곱셈의 의미’부터 다시 확인하면 바로잡을 수 있어요.",
+      "successorEdges": [
+        {
+          "to": "2수01-11",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "곱셈구구는 곱셈의 의미 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "2수01-10",
+          "type": "error_related",
+          "errorPattern": "3×4(=3을 4번 더함)를 3+4=7로 잘못 계산한다.",
+          "fix": "먼저 ‘곱셈의 의미’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
+    },
+    {
+      "code": "2수01-11",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "곱셈구구",
+      "summary": "곱셈구구를 이해하고, 한 자리 수의 곱셈을 할 수 있다.",
+      "prerequisites": [
+        "2수01-10"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-10",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "곱셈구구는 곱셈의 의미 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수02-01",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "변화와 관계",
+      "conceptName": "규칙 찾기",
+      "summary": "물체, 무늬, 수 등의 배열에서 규칙을 찾아 여러 가지 방법으로 표현할 수 있다.",
+      "prerequisites": [],
+      "successors": [
+        "2수02-02"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 1-2학년군 변화와 관계의 시작 노드(선수 성취기준 없음, 배열 관찰에서 출발).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수02-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "규칙을 정해 배열을 만들려면 배열에서 규칙을 찾는 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수02-02",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "변화와 관계",
+      "conceptName": "규칙 만들기",
+      "summary": "자신이 정한 규칙에 따라 물체, 무늬, 수 등을 배열할 수 있다.",
+      "prerequisites": [
+        "2수02-01"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수02-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "규칙을 정해 배열을 만들려면 배열에서 규칙을 찾는 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수03-01",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "입체도형의 모양",
+      "summary": "교실 및 생활 주변에서 여러 가지 물건을 관찰하여 직육면체, 원기둥, 구의 모양을 찾고, 이를 이용하여 여러 가지 모양을 만들 수 있다.",
+      "prerequisites": [],
+      "successors": [
+        "2수03-02"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 1-2학년군 입체도형의 시작 노드(선수 성취기준 없음, 생활 속 물체 관찰에서 출발).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-02",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "쌓기나무로 입체도형을 만들려면 직육면체·원기둥·구 등 입체도형의 모양을 알아야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-02",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "쌓기나무 입체",
+      "summary": "쌓기나무를 이용하여 여러 가지 입체도형의 모양을 만들고, 그 모양에 대해 위치나 방향을 이용하여 말할 수 있다.",
+      "prerequisites": [
+        "2수03-01"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "쌓기나무로 입체도형을 만들려면 직육면체·원기둥·구 등 입체도형의 모양을 알아야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수03-03",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "평면도형의 모양",
+      "summary": "교실 및 생활 주변에서 여러 가지 물건을 관찰하여 삼각형, 사각형, 원의 모양을 찾고, 이를 이용하여 여러 가지 모양을 만들 수 있다.",
+      "prerequisites": [],
+      "successors": [
+        "2수03-04"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 1-2학년군 평면도형의 시작 노드(선수 성취기준 없음, 생활 속 물체 관찰에서 출발).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "삼각형·사각형·원을 그리려면 그 평면도형의 모양을 찾고 인식할 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-04",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "평면도형 그리기",
+      "summary": "삼각형, 사각형, 원을 직관적으로 이해하고, 그 모양을 그릴 수 있다.",
+      "prerequisites": [
+        "2수03-03"
+      ],
+      "successors": [
+        "2수03-05"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-03",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "삼각형·사각형·원을 그리려면 그 평면도형의 모양을 찾고 인식할 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-05",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "삼각형·사각형의 공통점을 찾으려면 그 도형을 그리고 직관적으로 이해할 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-05",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "도형의 공통점",
+      "summary": "삼각형, 사각형에서 각각의 공통점을 찾아 말할 수 있다.",
+      "prerequisites": [
+        "2수03-04"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-04",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "삼각형·사각형의 공통점을 찾으려면 그 도형을 그리고 직관적으로 이해할 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수03-06",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "양의 비교",
+      "summary": "구체물의 길이, 들이, 무게, 넓이를 비교하여 각각 '길다, 짧다', '많다, 적다', '무겁다, 가볍다', '넓다, 좁다' 등을 구별하여 말할 수 있다.",
+      "prerequisites": [],
+      "successors": [
+        "2수03-10"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 1-2학년군 측정의 시작 노드(선수 성취기준 없음, 구체물의 양 비교에서 출발).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-10",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "cm·m로 길이를 측정하려면 길이를 '길다·짧다'로 비교한 양감 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-07",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "시각 읽기",
+      "summary": "시계를 보고 시각을 '몇 시 몇 분'까지 읽을 수 있다.",
+      "prerequisites": [
+        "2수01-01"
+      ],
+      "successors": [
+        "2수03-08"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수01-01",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "'몇 시 몇 분'을 읽으려면 100까지의 수를 세고 읽을 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-08",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "1시간과 1분의 관계는 시계에서 시각을 읽는 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-08",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "시간과 분",
+      "summary": "1시간과 1분의 관계를 이해하고, 시간을 '시간', '분'으로 표현할 수 있다.",
+      "prerequisites": [
+        "2수03-07"
+      ],
+      "successors": [
+        "2수03-09"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-07",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "1시간과 1분의 관계는 시계에서 시각을 읽는 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-09",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "1일·1주일·1년 등 시간의 관계는 1시간과 1분의 관계 이해 위에서 확장된다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-09",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "시간의 관계",
+      "summary": "실생활 문제 상황과 연결하여 1분, 1시간, 1일, 1주일, 1개월, 1년 사이의 관계를 이해한다.",
+      "prerequisites": [
+        "2수03-08"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-08",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "1일·1주일·1년 등 시간의 관계는 1시간과 1분의 관계 이해 위에서 확장된다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수03-10",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "길이 측정(cm,m)",
+      "summary": "길이 단위 1cm와 1m를 알고, 이를 이용하여 주변 사물의 길이를 측정할 수 있다.",
+      "prerequisites": [
+        "2수03-06"
+      ],
+      "successors": [
+        "2수03-11",
+        "2수03-12"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "cm·m로 길이를 측정하려면 길이를 '길다·짧다'로 비교한 양감 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-11",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "'몇 m 몇 cm' 표현은 cm·m 단위로 길이를 측정한 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수03-12",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "길이를 어림하려면 cm·m 단위로 길이를 측정한 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-11",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "길이 표현",
+      "summary": "1m와 1cm의 관계를 이해하고, 길이를 '몇 m 몇 cm'와 '몇 cm'로 표현할 수 있다.",
+      "prerequisites": [
+        "2수03-10"
+      ],
+      "successors": [
+        "2수03-13"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-10",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "'몇 m 몇 cm' 표현은 cm·m 단위로 길이를 측정한 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수03-13",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "길이의 덧셈·뺄셈은 'm와 cm'로 길이를 표현할 수 있어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수03-12",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "길이 어림",
+      "summary": "여러 가지 물건의 길이를 어림하고, 길이에 대한 양감을 기른다.",
+      "prerequisites": [
+        "2수03-10"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-10",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "길이를 어림하려면 cm·m 단위로 길이를 측정한 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수03-13",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "도형과 측정",
+      "conceptName": "길이의 덧셈과 뺄셈",
+      "summary": "실생활 문제 상황과 연결하여 길이의 덧셈과 뺄셈을 할 수 있다.",
+      "prerequisites": [
+        "2수03-11",
+        "2수01-06"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수03-11",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "길이의 덧셈·뺄셈은 'm와 cm'로 길이를 표현할 수 있어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수01-06",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "길이의 덧셈·뺄셈 계산에는 두 자리 수 덧셈·뺄셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    },
+    {
+      "code": "2수04-01",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "자료와 가능성",
+      "conceptName": "분류하기",
+      "summary": "여러 가지 사물을 정해진 기준 또는 자신이 정한 기준으로 분류하여 개수를 세어 보고, 기준에 따른 결과를 말할 수 있다.",
+      "prerequisites": [],
+      "successors": [
+        "2수04-02",
+        "2수04-03"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 1-2학년군 자료와 가능성의 시작 노드(선수 성취기준 없음, 기준에 따른 분류에서 출발).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수04-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "자료를 표로 나타내려면 기준에 따라 분류하고 개수를 세는 활동이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수04-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "자료를 그래프로 나타내려면 기준에 따라 분류하는 활동이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수04-02",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "자료와 가능성",
+      "conceptName": "표로 나타내기",
+      "summary": "자료를 분류하여 표로 나타내고, 자료를 표로 나타내면 편리한 점을 말할 수 있다.",
+      "prerequisites": [
+        "2수04-01"
+      ],
+      "successors": [
+        "2수04-03"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수04-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "자료를 표로 나타내려면 기준에 따라 분류하고 개수를 세는 활동이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "2수04-03",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "○·×·/ 그래프 표현은 자료를 표로 정리한 경험 위에서 이루어진다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
+      "code": "2수04-03",
+      "gradeBand": "1-2",
+      "subject": "수학",
+      "domain": "자료와 가능성",
+      "conceptName": "그래프로 나타내기",
+      "summary": "자료를 분류하여 ○, ×, / 등을 이용한 그래프로 나타내고, 자료를 그래프로 나타내면 편리한 점을 말할 수 있다.",
+      "prerequisites": [
+        "2수04-01",
+        "2수04-02"
+      ],
+      "successors": [],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "2수04-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "자료를 그래프로 나타내려면 기준에 따라 분류하는 활동이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "2수04-02",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "○·×·/ 그래프 표현은 자료를 표로 정리한 경험 위에서 이루어진다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
+    }
+  ]
+}
