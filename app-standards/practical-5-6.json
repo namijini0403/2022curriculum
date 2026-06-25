@@ -212,7 +212,9 @@
       "conceptName": "발명과 기술의 가치",
       "summary": "발명의 의미를 이해하고, 일상생활을 바꾼 발명품을 탐색하여 발명과 기술에 대한 중요성과 가치를 인식한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6실03-02"
+      ],
       "kslLinks": []
     },
     {
@@ -302,7 +304,9 @@
       "conceptName": "로봇의 개념과 구조",
       "summary": "로봇의 개념과 구조를 이해하고, 생활 속 로봇 기능을 체험하여 로봇의 중요성을 인식한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6실04-06"
+      ],
       "kslLinks": []
     },
     {
@@ -392,7 +396,9 @@
       "conceptName": "문제해결과 알고리즘",
       "summary": "컴퓨터를 활용한 생활 속 문제해결 사례를 탐색하고 일상생활 속 문제를 해결하기 위한 알고리즘을 다양한 방법으로 표현한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6실05-02"
+      ],
       "kslLinks": []
     },
     {
@@ -405,7 +411,9 @@
       "prerequisites": [
         "6실05-01"
       ],
-      "successors": [],
+      "successors": [
+        "6실05-03"
+      ],
       "kslLinks": []
     },
     {
@@ -430,7 +438,8 @@
       "summary": "디지털 데이터와 아날로그 데이터의 특징을 이해하고, 인공지능에 활용할 수 있는 데이터의 유형이나 형태를 탐색한다.",
       "prerequisites": [],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "misconception": "인공지능이 만든 결과를 무조건 옳다고 믿어 데이터의 편향과 한계를 따지지 않는다."
     },
     {
       "code": "6실05-05",

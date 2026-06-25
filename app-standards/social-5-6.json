@@ -14,8 +14,11 @@
       "conceptName": "역사의 시간 개념",
       "summary": "일상 속에서 시간의 흐름을 경험할 수 있는 사례를 살펴보고, 이를 바탕으로 역사의 시간 개념을 이해한다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6사04-01"
+      ],
+      "kslLinks": [],
+      "misconception": "옛날보다 오늘날이 무조건 더 낫다고 보아 변화의 성과와 한계를 함께 보지 못한다."
     },
     {
       "code": "4사05-01",
@@ -25,7 +28,10 @@
       "conceptName": "지도의 요소",
       "summary": "우리 지역을 표현한 다양한 종류의 지도를 찾아보고, 지도의 요소를 이해한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사01-01",
+        "6사09-01"
+      ],
       "kslLinks": [],
       "misconception": "지도에서 가까워 보이면 실제로도 가깝다고 보아 축척을 고려하지 않는다.",
       "fix": "먼저 ‘비율’부터 다시 확인하면 바로잡을 수 있어요."
@@ -38,7 +44,9 @@
       "conceptName": "희소성과 합리적 선택",
       "summary": "자원의 희소성으로 인해 경제활동에서 선택의 문제가 발생함을 이해하고, 경제활동에서 합리적 선택의 방법을 탐색한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사11-01"
+      ],
       "kslLinks": []
     },
     {
@@ -49,7 +57,9 @@
       "conceptName": "학교 자치와 민주주의",
       "summary": "학교 자치 사례를 통하여 민주주의의 의미를 이해하고, 학교생활에서 민주주의를 실천하는 능력을 기른다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사03-01"
+      ],
       "kslLinks": []
     },
     {
@@ -60,7 +70,9 @@
       "conceptName": "주민 자치와 참여",
       "summary": "지역에서 이루어지는 민주주의 사례를 통해 주민 자치와 주민 참여의 중요성을 파악하고, 지역사회의 문제 해결에 참여하는 태도를 기른다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사08-01"
+      ],
       "kslLinks": []
     },
     {
@@ -165,7 +177,9 @@
       "conceptName": "고려 시대 사람들의 생활",
       "summary": "다양한 역사 자료를 활용하여 고려 시대 사회 모습과 사람들의 생활을 추론한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사05-01"
+      ],
       "kslLinks": []
     },
     {
@@ -189,7 +203,9 @@
       "conceptName": "조선 후기와 근대 문물",
       "summary": "조선 후기 사회·문화적 변화와 개항기 근대 문물 수용 과정에서 달라진 사람들의 생활을 이해한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사06-01"
+      ],
       "kslLinks": []
     },
     {
@@ -213,7 +229,9 @@
       "conceptName": "광복과 6·25 전쟁",
       "summary": "8·15 광복과 6·25 전쟁이 사회와 생활에 미친 영향을 파악한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사07-01"
+      ],
       "kslLinks": []
     },
     {
@@ -298,7 +316,9 @@
       "conceptName": "세계의 대륙과 대양",
       "summary": "세계 주요 대륙과 대양을 파악하고, 우리나라 및 세계 여러 국가의 위치와 영토의 특징을 이해한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6사10-01"
+      ],
       "kslLinks": []
     },
     {

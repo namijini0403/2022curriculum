@@ -14,7 +14,9 @@
       "conceptName": "힘과 관련된 현상 관찰",
       "summary": "일상생활에서 힘과 관련된 현상에 흥미를 갖고, 물체를 밀거나 당길 때 나타나는 현상을 관찰할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과10-01"
+      ],
       "kslLinks": []
     },
     {
@@ -25,7 +27,9 @@
       "conceptName": "식물의 분류",
       "summary": "여러 가지 식물을 관찰하여 특징에 따라 식물을 분류할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과11-02"
+      ],
       "kslLinks": []
     },
     {
@@ -36,7 +40,10 @@
       "conceptName": "물질의 세 가지 상태",
       "summary": "물질의 세 가지 상태인 고체, 액체, 기체의 성질을 관찰하여 비교할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "4과10-01",
+        "6과03-01"
+      ],
       "kslLinks": []
     },
     {
@@ -47,7 +54,9 @@
       "conceptName": "육지와 바다의 특징",
       "summary": "지구가 대기로 둘러싸여 있음을 알고, 지구 표면을 구성하는 육지와 바다의 특징을 비교할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과06-01"
+      ],
       "kslLinks": []
     },
     {
@@ -58,7 +67,9 @@
       "conceptName": "자석의 극",
       "summary": "자석과 자석을 가까이했을 때 나타나는 현상을 관찰하여 그 특징을 자석의 극과 관련지어 설명할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과15-03"
+      ],
       "kslLinks": []
     },
     {
@@ -71,8 +82,12 @@
       "prerequisites": [
         "4과05-02"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6과07-01"
+      ],
+      "kslLinks": [],
+      "misconception": "증발과 끓음을 구분하지 못해 '물은 끓어야만 수증기가 된다'고 생각한다.",
+      "fix": "먼저 ‘물의 상태 변화’부터 다시 확인하면 바로잡을 수 있어요."
     },
     {
       "code": "4과11-01",
@@ -82,7 +97,9 @@
       "conceptName": "흐르는 물과 지형",
       "summary": "흐르는 물의 작용과 강 주변 지형의 특징을 관련지을 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과01-01"
+      ],
       "kslLinks": []
     },
     {
@@ -93,7 +110,9 @@
       "conceptName": "달의 모양과 위상변화",
       "summary": "달의 모양과 표면, 달의 위상변화를 관찰하여 밤하늘 관찰에 흥미를 가질 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과12-01"
+      ],
       "kslLinks": []
     },
     {
@@ -104,7 +123,9 @@
       "conceptName": "여러 가지 기체",
       "summary": "일상생활에서 이용되는 기체의 종류와 성질을 조사하고, 여러 가지 기체에 대해 흥미를 느낄 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과14-02"
+      ],
       "kslLinks": []
     },
     {
@@ -115,7 +136,9 @@
       "conceptName": "기후변화와 인간 활동",
       "summary": "기후변화 현상의 예를 알고, 기후변화가 인간의 활동과 관련되어 있음을 토의할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과08-01"
+      ],
       "kslLinks": []
     },
     {
@@ -196,7 +219,10 @@
       "prerequisites": [
         "4과05-02"
       ],
-      "successors": [],
+      "successors": [
+        "6과05-02",
+        "6과09-01"
+      ],
       "kslLinks": []
     },
     {
@@ -557,7 +583,9 @@
       "conceptName": "지구의 공전",
       "summary": "지구의 공전을 알고, 계절에 따라 달라지는 별자리를 관찰할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과13-03"
+      ],
       "kslLinks": []
     },
     {
@@ -649,7 +677,10 @@
       "conceptName": "전기 회로",
       "summary": "전지와 전구, 전선을 연결하여 전구에 불을 켜보고, 불이 켜지는 전기 회로의 특징을 말할 수 있다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6과15-02",
+        "6과15-03"
+      ],
       "kslLinks": []
     },
     {

@@ -14,8 +14,11 @@
       "conceptName": "운동과 체력의 의미",
       "summary": "운동과 체력의 의미를 이해하고 관계를 파악한다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6체01-01"
+      ],
+      "kslLinks": [],
+      "misconception": "운동은 타고난 사람만 잘한다고 여겨 자신의 신체를 긍정하지 못하고 노력을 포기한다."
     },
     {
       "code": "4체01-03",
@@ -25,7 +28,9 @@
       "conceptName": "운동과 건강의 관계",
       "summary": "운동과 건강의 의미를 이해하고 관계를 파악한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6체01-03"
+      ],
       "kslLinks": []
     },
     {
@@ -36,7 +41,9 @@
       "conceptName": "기술형 스포츠 움직임",
       "summary": "기술형 스포츠에 적합한 기본 움직임 기술을 파악하고 시도한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6체02-01"
+      ],
       "kslLinks": []
     },
     {
@@ -47,7 +54,9 @@
       "conceptName": "전략형 스포츠 움직임",
       "summary": "전략형 스포츠에 적합한 기본 움직임 기술을 파악하고 시도한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6체02-04"
+      ],
       "kslLinks": []
     },
     {
@@ -58,7 +67,9 @@
       "conceptName": "생태형 스포츠 움직임",
       "summary": "생태형 스포츠에 적합한 기본 움직임 기술을 파악하고 시도한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6체02-07"
+      ],
       "kslLinks": []
     },
     {
@@ -69,7 +80,9 @@
       "conceptName": "표현 활동의 의미",
       "summary": "표현 활동의 의미와 기본 움직임 기술과의 관계를 파악한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6체03-01"
+      ],
       "kslLinks": []
     },
     {
