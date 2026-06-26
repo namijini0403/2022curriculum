@@ -261,6 +261,31 @@ function enrichWithMisconceptions() {
 }
 enrichWithMisconceptions();
 
+// ── conceptName 단일 출처화: math-*.json의 conceptName을 20-nodes의 title(진실의 원천)로 동기화.
+//    math-5-6은 손유지 파일이라 과거엔 title과 따로 놀았음 → title을 canonical로 못박아 드리프트 제거.
+function syncMathConceptNames() {
+  const titleByCode = {};
+  for (const f of readdirSync(NODES).filter((x) => /^[246]수.*\.md$/.test(x))) {
+    const t = readFileSync(path.join(NODES, f), "utf8");
+    const fm = (t.match(/^---\n([\s\S]*?)\n---/) || [])[1] || "";
+    const id = ((fm.match(/^id:\s*(.+)$/m) || [])[1] || "").trim();
+    const title = ((fm.match(/^title:\s*(.+)$/m) || [])[1] || "").trim();
+    if (id && title) titleByCode[id] = title;
+  }
+  for (const f of readdirSync(APP).filter((x) => /^math-.*\.json$/.test(x))) {
+    const p = path.join(APP, f);
+    const doc = JSON.parse(readFileSync(p, "utf8"));
+    let n = 0;
+    for (const node of doc.nodes || []) {
+      const t = titleByCode[node.code];
+      if (t && node.conceptName !== t) { node.conceptName = t; n++; }
+    }
+    writeFileSync(p, JSON.stringify(doc, null, 2) + "\n", "utf8");
+    if (n) console.log(`${f}: conceptName 동기화 ${n} (←20-nodes title)`);
+  }
+}
+syncMathConceptNames();
+
 // ── successors 자동 파생: prerequisites(+prereqEdges)의 역방향을 각 파일 안에서 계산.
 //    손으로 적지 않는다(드리프트 방지). prerequisites: string[] 시그니처는 불변.
 //    같은 패스에서 dangling(미해결 참조) 0을 검증한다(회귀 금지).

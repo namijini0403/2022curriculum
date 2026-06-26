@@ -458,7 +458,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "세 자리 수 덧셈과 뺄셈",
+      "conceptName": "세 자리 수의 덧셈과 뺄셈",
       "summary": "세 자리 수의 덧셈과 뺄셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
       "prerequisites": [
         "2수01-06"
@@ -588,7 +588,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "나눗셈(한 자리)",
+      "conceptName": "나눗셈의 몫과 나머지",
       "summary": "나누는 수가 한 자리 수인 나눗셈의 계산 원리를 이해하고 그 계산을 할 수 있으며, 나눗셈에서 몫과 나머지의 의미를 안다.",
       "prerequisites": [
         "4수01-05"
@@ -698,7 +698,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "분수의 이해",
+      "conceptName": "분수의 의미",
       "summary": "양의 등분할을 통하여 분수의 필요성을 인식하고, 분수를 이해하고 읽고 쓸 수 있다.",
       "prerequisites": [
         "4수01-05"
@@ -744,7 +744,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "단위·진·가·대분수",
+      "conceptName": "분수의 종류",
       "summary": "단위분수, 진분수, 가분수, 대분수를 알고, 그 관계를 이해한다.",
       "prerequisites": [
         "4수01-09"
@@ -928,7 +928,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "분모 같은 분수 덧셈뺄셈",
+      "conceptName": "분모가 같은 분수의 덧셈과 뺄셈",
       "summary": "분모가 같은 분수의 덧셈과 뺄셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
       "prerequisites": [
         "4수01-10"
@@ -1350,7 +1350,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "도형과 측정",
-      "conceptName": "이등변·정삼각형",
+      "conceptName": "이등변삼각형·정삼각형",
       "summary": "여러 가지 모양의 삼각형에 대한 분류 활동을 통하여 이등변삼각형, 정삼각형을 이해하고, 그 성질을 탐구하고 설명할 수 있다.",
       "prerequisites": [
         "2수03-05",
@@ -1615,7 +1615,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "도형과 측정",
-      "conceptName": "길이(mm, km)",
+      "conceptName": "길이 단위(mm·km)",
       "summary": "길이 단위 1mm와 1km를 알고, 이를 이용하여 길이를 측정하고 어림하며 수학의 유용성을 인식할 수 있다.",
       "prerequisites": [
         "2수03-10"
@@ -1688,7 +1688,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "도형과 측정",
-      "conceptName": "들이(L, mL)",
+      "conceptName": "들이 단위(L·mL)",
       "summary": "들이 단위 1L와 1mL를 알고, 이를 이용하여 들이를 측정하고 어림하며 수학의 유용성을 인식할 수 있다.",
       "prerequisites": [
         "2수03-06"
@@ -1791,7 +1791,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "도형과 측정",
-      "conceptName": "무게(g, kg)",
+      "conceptName": "무게 단위(g·kg)",
       "summary": "실생활에서 무게를 나타낼 때 사용하는 단위 1g과 1kg을 알고, 이를 이용하여 무게를 측정하고 어림하며 수학의 유용성을 인식할 수 있다.",
       "prerequisites": [
         "2수03-06"
@@ -1875,7 +1875,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "도형과 측정",
-      "conceptName": "무게(t)",
+      "conceptName": "무게 단위(t)",
       "summary": "실생활에서 무게를 나타낼 때 사용하는 단위 1t을 알고, 1t과 1kg의 관계를 이해한다.",
       "prerequisites": [
         "4수03-20"
@@ -2002,7 +2002,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "자료와 가능성",
-      "conceptName": "그림·막대그래프",
+      "conceptName": "그림그래프·막대그래프",
       "summary": "자료를 수집하여 그림그래프나 막대그래프로 나타내고 해석할 수 있다.",
       "prerequisites": [
         "2수04-02",
@@ -2094,7 +2094,7 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "자료와 가능성",
-      "conceptName": "탐구 문제와 그래프",
+      "conceptName": "자료 수집과 그래프 표현",
       "summary": "탐구 문제를 해결하기 위해 자료를 수집, 정리하여 막대그래프나 꺾은선그래프로 나타내고 해석할 수 있다.",
       "prerequisites": [
         "4수04-01",
