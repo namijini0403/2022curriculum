@@ -133,6 +133,28 @@
       ]
     },
     {
+      "code": "4수01-05",
+      "gradeBand": "3-4",
+      "subject": "수학",
+      "domain": "수와 연산",
+      "conceptName": "나눗셈의 의미",
+      "summary": "나눗셈이 이루어지는 실생활 상황과 연결하여 나눗셈의 의미를 알고, 곱셈과 나눗셈의 관계를 이해한다.",
+      "prerequisites": [],
+      "successors": [
+        "6수02-02"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수02-02",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "비는 한 양이 다른 양의 몇 배인지를 따지는 비교이므로 나눗셈의 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
+    },
+    {
       "code": "4수01-06",
       "gradeBand": "3-4",
       "subject": "수학",
@@ -811,10 +833,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -850,10 +871,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -880,6 +900,7 @@
       "successors": [
         "6수01-07",
         "6수01-08",
+        "6수01-09",
         "6수01-11"
       ],
       "kslLinks": [
@@ -909,10 +930,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -927,6 +947,13 @@
           "type": "prerequisite",
           "strength": 0.95,
           "rationale": "분모가 다른 분수의 덧셈·뺄셈은 통분으로 분모를 같게 만든 뒤 계산하므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-09",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "분수의 곱셈은 계산 과정과 결과(기약분수)에서 약분을 활용하므로 약분과 통분이 선행되어야 한다.",
           "source": "교육과정 계열"
         },
         {
@@ -968,10 +995,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       }
     },
     {
@@ -1006,10 +1032,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "misconceptionEdges": [
         {
@@ -1028,6 +1053,7 @@
       "conceptName": "분수의 곱셈",
       "summary": "분수의 곱셈의 계산 원리를 탐구하고 그 계산을 할 수 있다.",
       "prerequisites": [
+        "6수01-06",
         "4수01-10",
         "4수01-04"
       ],
@@ -1036,6 +1062,13 @@
       ],
       "kslLinks": [],
       "prereqEdges": [
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "분수의 곱셈은 계산 과정과 결과(기약분수)에서 약분을 활용하므로 약분과 통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
         {
           "to": "4수01-10",
           "type": "prerequisite",
@@ -1052,10 +1085,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -1101,10 +1133,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -1156,10 +1187,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "misconceptionEdges": [
         {
@@ -1203,10 +1233,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -1389,10 +1418,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       }
     },
     {
@@ -1403,7 +1431,8 @@
       "conceptName": "비",
       "summary": "두 양의 크기를 비교하는 상황을 통해 비의 개념을 이해하고, 두 양의 관계를 비로 나타낼 수 있다.",
       "prerequisites": [
-        "4수01-09"
+        "4수01-09",
+        "4수01-05"
       ],
       "successors": [
         "6수02-03"
@@ -1418,13 +1447,19 @@
           "strength": 0.8,
           "rationale": "두 양의 크기를 비교해 비로 나타내는 데 분수(부분-전체) 의미가 선행되어야 한다.",
           "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-05",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "비는 한 양이 다른 양의 몇 배인지를 따지는 비교이므로 나눗셈의 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -1474,10 +1509,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -1535,10 +1569,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       },
       "successorEdges": [
         {
@@ -1572,10 +1605,9 @@
         }
       ],
       "prereqReview": {
-        "status": "inferred",
-        "by": null,
-        "date": "2026-06-25",
-        "pilotCandidate": true
+        "status": "reviewed",
+        "by": "교사(도메인 전문가)",
+        "date": "2026-06-26"
       }
     },
     {
