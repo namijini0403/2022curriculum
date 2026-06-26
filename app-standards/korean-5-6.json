@@ -22,7 +22,9 @@
       "conceptName": "중요 내용·주제 듣고 요약",
       "summary": "중요한 내용과 주제를 파악하며 듣고 그 내용을 요약한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-01"
+      ],
       "kslLinks": []
     },
     {
@@ -33,7 +35,9 @@
       "conceptName": "원인·결과 예측하며 듣기",
       "summary": "원인과 결과의 관계를 고려하여 내용을 예측하며 듣고 말한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-02"
+      ],
       "kslLinks": []
     },
     {
@@ -55,7 +59,9 @@
       "conceptName": "예의 지켜 대화",
       "summary": "상황과 상대의 입장을 이해하고 예의를 지키며 대화한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-04"
+      ],
       "kslLinks": []
     },
     {
@@ -66,7 +72,10 @@
       "conceptName": "자료 정리해 발표",
       "summary": "목적과 주제에 알맞게 자료를 정리하여 자신감 있게 발표한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-04",
+        "6국01-05"
+      ],
       "kslLinks": []
     },
     {
@@ -77,7 +86,11 @@
       "conceptName": "의견·이유 제시 토의",
       "summary": "주제에 적절한 의견과 이유를 제시하고 서로의 생각을 교환하며 토의한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-03",
+        "6국01-06",
+        "6국01-07"
+      ],
       "kslLinks": []
     },
     {
@@ -88,7 +101,10 @@
       "conceptName": "유창하게 읽기",
       "summary": "글의 의미를 파악하며 유창하게 글을 읽는다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국02-01",
+        "6국02-02"
+      ],
       "kslLinks": []
     },
     {
@@ -99,8 +115,20 @@
       "conceptName": "중심 생각 파악·간추리기",
       "summary": "문단과 글에서 중심 생각을 파악하고 내용을 간추린다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6국02-01"
+      ],
+      "kslLinks": [],
+      "misconception": "예시·반복 문장에 매여 문단의 중심 문장을 가려내지 못한다. 중심/뒷받침 문장을 구분해 다시 세운다.",
+      "fix": "먼저 ‘중심 생각’부터 다시 확인하면 바로잡을 수 있어요.",
+      "misconceptionEdges": [
+        {
+          "to": "4국02-02",
+          "type": "error_related",
+          "errorPattern": "예시·반복 문장에 매여 문단의 중심 문장을 가려내지 못한다. 중심/뒷받침 문장을 구분해 다시 세운다.",
+          "fix": "먼저 ‘중심 생각’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "4국02-03",
@@ -110,7 +138,9 @@
       "conceptName": "질문하며 예측·점검",
       "summary": "질문을 활용하여 글을 예측하며 읽고 자신의 읽기 과정을 점검한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국02-02"
+      ],
       "kslLinks": []
     },
     {
@@ -121,7 +151,10 @@
       "conceptName": "사실과 의견 구분",
       "summary": "글에 나타난 사실과 의견을 구분하고 필자와 자신의 의견을 비교한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-02",
+        "6국02-03"
+      ],
       "kslLinks": []
     },
     {
@@ -132,7 +165,11 @@
       "conceptName": "출처 신뢰성 판단",
       "summary": "글이나 자료의 출처가 믿을 만한지 판단한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국02-03",
+        "6국03-02",
+        "6국06-02"
+      ],
       "kslLinks": []
     },
     {
@@ -143,7 +180,9 @@
       "conceptName": "읽기 습관·자신감",
       "summary": "바람직한 읽기 습관을 형성하고 읽기에 대한 자신감을 기른다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국02-05"
+      ],
       "kslLinks": []
     },
     {
@@ -154,7 +193,11 @@
       "conceptName": "문단 쓰기·고쳐쓰기",
       "summary": "중심 문장과 뒷받침 문장을 갖추어 문단을 쓰고, 문장과 문단을 중심으로 고쳐 쓴다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국03-01",
+        "6국03-04",
+        "6국03-05"
+      ],
       "kslLinks": []
     },
     {
@@ -165,7 +208,9 @@
       "conceptName": "보고하는 글",
       "summary": "절차와 결과가 드러나게 정확한 표현으로 보고하는 글을 쓴다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국03-01"
+      ],
       "kslLinks": []
     },
     {
@@ -176,7 +221,9 @@
       "conceptName": "의견이 드러나는 글",
       "summary": "대상에 대한 자신의 의견과 그렇게 생각한 이유가 드러나게 글을 쓴다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국03-02"
+      ],
       "kslLinks": []
     },
     {
@@ -187,7 +234,9 @@
       "conceptName": "마음을 전하는 글",
       "summary": "목적과 주제를 고려하여 독자에게 마음을 전하는 글을 쓴다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국03-03"
+      ],
       "kslLinks": []
     },
     {
@@ -198,7 +247,9 @@
       "conceptName": "쓰기 과정 점검·자신감",
       "summary": "자신의 쓰기 과정을 점검하며 쓰기에 자신감을 갖는다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국03-06"
+      ],
       "kslLinks": []
     },
     {
@@ -209,7 +260,9 @@
       "conceptName": "단어의 의미 관계",
       "summary": "단어와 단어 간의 의미 관계를 파악한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국04-03"
+      ],
       "kslLinks": []
     },
     {
@@ -220,7 +273,10 @@
       "conceptName": "단어 분류·국어사전",
       "summary": "단어를 분류하고 국어사전을 활용하여 능동적인 국어 활동을 한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국04-03",
+        "6국04-06"
+      ],
       "kslLinks": []
     },
     {
@@ -231,7 +287,9 @@
       "conceptName": "문장의 짜임",
       "summary": "기본적인 문장의 짜임을 이해하고 적절하게 사용한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국04-04"
+      ],
       "kslLinks": []
     },
     {
@@ -242,7 +300,9 @@
       "conceptName": "높임·지시·접속 표현",
       "summary": "글과 담화에 쓰인 높임 표현과 지시·접속 표현을 이해하고 상황에 맞게 표현한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국04-05"
+      ],
       "kslLinks": []
     },
     {
@@ -253,7 +313,10 @@
       "conceptName": "언어의 기능·국어 사랑",
       "summary": "언어가 의사소통과 관계 형성의 수단임을 이해하고 국어를 소중히 여기는 태도를 지닌다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국04-01",
+        "6국04-02"
+      ],
       "kslLinks": []
     },
     {
@@ -264,7 +327,10 @@
       "conceptName": "인물과 이야기 흐름",
       "summary": "인물과 이야기의 흐름을 중심으로 작품을 감상한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국05-01",
+        "6국05-03"
+      ],
       "kslLinks": []
     },
     {
@@ -275,7 +341,9 @@
       "conceptName": "작품과 현실 비교",
       "summary": "자신의 경험을 바탕으로 작품 속 세계와 현실 세계를 비교하여 작품을 감상한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국05-05"
+      ],
       "kslLinks": []
     },
     {
@@ -286,7 +354,9 @@
       "conceptName": "마음에 드는 작품 소개",
       "summary": "작품을 듣거나 읽고 마음에 드는 작품을 소개한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국05-04"
+      ],
       "kslLinks": []
     },
     {
@@ -297,7 +367,10 @@
       "conceptName": "감각적 표현",
       "summary": "감각적 표현에 유의하여 작품을 감상하고, 감각적 표현을 활용하여 자신의 생각이나 감정을 표현한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국05-02",
+        "6국05-05"
+      ],
       "kslLinks": []
     },
     {
@@ -308,7 +381,9 @@
       "conceptName": "작품 즐겨 감상",
       "summary": "재미나 감동을 느끼며 작품을 즐겨 감상하는 태도를 지닌다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국05-06"
+      ],
       "kslLinks": []
     },
     {
@@ -319,7 +394,10 @@
       "conceptName": "인터넷 자료 탐색·선택",
       "summary": "인터넷에서 학습에 필요한 다양한 자료를 탐색하고 목적에 맞게 자료를 선택한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국06-01",
+        "6국06-02"
+      ],
       "kslLinks": []
     },
     {
@@ -330,7 +408,10 @@
       "conceptName": "매체 발표 자료 만들기",
       "summary": "매체를 활용하여 간단한 발표 자료를 만든다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국01-05",
+        "6국06-03"
+      ],
       "kslLinks": []
     },
     {
@@ -341,7 +422,11 @@
       "conceptName": "매체 소통 윤리",
       "summary": "매체 소통 윤리를 고려하여 매체 자료를 활용하고 공유한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6국03-04",
+        "6국06-03",
+        "6국06-04"
+      ],
       "kslLinks": []
     },
     {
@@ -368,7 +453,9 @@
         "4국01-02",
         "4국02-04"
       ],
-      "successors": [],
+      "successors": [
+        "6국01-07"
+      ],
       "kslLinks": []
     },
     {
@@ -450,7 +537,9 @@
         "4국02-02",
         "4국02-01"
       ],
-      "successors": [],
+      "successors": [
+        "6국02-04"
+      ],
       "kslLinks": [
         "KSL-5단계-읽기-3"
       ]
@@ -482,8 +571,20 @@
         "4국02-04",
         "4국02-05"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6국02-04"
+      ],
+      "kslLinks": [],
+      "misconception": "사실(확인 가능)과 의견(생각·주장)을 구분하지 못해 타당성 평가가 흔들린다.",
+      "fix": "먼저 ‘타당성·적절성 평가’부터 다시 확인하면 바로잡을 수 있어요.",
+      "misconceptionEdges": [
+        {
+          "to": "6국02-03",
+          "type": "error_related",
+          "errorPattern": "사실(확인 가능)과 의견(생각·주장)을 구분하지 못해 타당성 평가가 흔들린다.",
+          "fix": "먼저 ‘타당성·적절성 평가’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6국02-04",
@@ -542,7 +643,17 @@
         "4국02-05"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "misconception": "주장만 되풀이하고 뒷받침 근거를 들지 못한다. 근거의 역할을 다시 세운다.",
+      "fix": "먼저 ‘근거와 출처’부터 다시 확인하면 바로잡을 수 있어요.",
+      "misconceptionEdges": [
+        {
+          "to": "6국03-02",
+          "type": "error_related",
+          "errorPattern": "주장만 되풀이하고 뒷받침 근거를 들지 못한다. 근거의 역할을 다시 세운다.",
+          "fix": "먼저 ‘근거와 출처’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6국03-03",
@@ -654,7 +765,17 @@
         "4국04-03"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "misconception": "주어와 서술어가 호응하지 않는 비문을 쓴다. 문장 성분을 짚어 호응을 맞추게 한다.",
+      "fix": "먼저 ‘문장 성분’부터 다시 확인하면 바로잡을 수 있어요.",
+      "misconceptionEdges": [
+        {
+          "to": "6국04-04",
+          "type": "error_related",
+          "errorPattern": "주어와 서술어가 호응하지 않는 비문을 쓴다. 문장 성분을 짚어 호응을 맞추게 한다.",
+          "fix": "먼저 ‘문장 성분’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6국04-05",
@@ -786,7 +907,17 @@
         "4국06-01"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "misconception": "검색 결과·뉴스를 출처 확인 없이 사실로 받아들인다. 신뢰성 평가 기준을 적용하게 한다.",
+      "fix": "먼저 ‘매체 자료의 신뢰성’부터 다시 확인하면 바로잡을 수 있어요.",
+      "misconceptionEdges": [
+        {
+          "to": "6국06-02",
+          "type": "error_related",
+          "errorPattern": "검색 결과·뉴스를 출처 확인 없이 사실로 받아들인다. 신뢰성 평가 기준을 적용하게 한다.",
+          "fix": "먼저 ‘매체 자료의 신뢰성’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6국06-03",

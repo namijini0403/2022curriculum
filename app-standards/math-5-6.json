@@ -2,7 +2,7 @@
   "_meta": {
     "source": "2022 개정 교육과정 수학과(교육부 고시 제2022-33호 별책8) — 성취기준 코드·문구 verbatim. curriculum-kb(20-nodes) 검증 자산에서 도출.",
     "status": "verbatim",
-    "note": "성취기준 코드와 문구(summary)는 별책8 원문 그대로다. prerequisites는 curriculum-kb의 개념 결손 체인을 성취기준 단위로 표현한 것으로(교육과정 계열 기반), 데모용으로 신뢰 가능하나 교사 검수 권장. 3-4(4수) 노드는 결손 체인에서 참조되는 선수 성취기준만 포함했다(앱 결손 추적의 floor).",
+    "note": "성취기준 코드와 문구(summary)는 별책8 원문 그대로다. prerequisites는 curriculum-kb의 개념 결손 체인을 성취기준 단위로 표현한 것으로(교육과정 계열 기반), 데모용으로 신뢰 가능하나 교사 검수 권장. 3-4(4수) 노드는 결손 체인에서 참조되는 선수 성취기준만 포함했다(앱 결손 추적의 floor). 병렬 필드: prereqEdges(엣지별 type·strength·rationale, DRACONIS concept_relations용)·successors/successorEdges(prereq 역방향 자동 파생)·prereqReview(검수 상태)·misconceptionEdges(error_related 구조화). 검수 상태: 5-6 전 노드 status:inferred(도메인 전문가 검수 전, 파일럿 strand 분수·소수·비/비율은 pilotCandidate 표시). 기존 소비자(ClassTalk)용 prerequisites/successors:string[]·misconception·fix 시그니처 불변. 형제 파일: math-3-4.json, math-1-2.json.",
     "gradeBandFocus": "5-6",
     "domains": {
       "01": "수와 연산",
@@ -17,22 +17,52 @@
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "큰 수",
+      "conceptName": "10000 이상의 큰 수",
       "summary": "큰 수의 필요성을 인식하면서 10000 이상의 큰 수에 대한 자릿값과 위치적 기수법을 이해하고, 수를 읽고 쓸 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-02",
+        "6수01-03"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-02",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "수의 범위를 다루려면 큰 수의 자릿값과 기수법을 먼저 이해해야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-03",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "어림값의 자릿값을 다루려면 큰 수의 자릿값 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-02",
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "수와 연산",
-      "conceptName": "수의 계열과 크기 비교",
+      "conceptName": "큰 수의 계열과 크기",
       "summary": "다섯 자리 이상의 수의 범위에서 수의 계열을 이해하고, 수의 크기를 비교하며 그 방법을 설명할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-02"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "이상·이하·초과·미만으로 범위를 나타내려면 수의 계열과 크기 비교가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-03",
@@ -42,8 +72,19 @@
       "conceptName": "세 자리 수의 덧셈과 뺄셈",
       "summary": "세 자리 수의 덧셈과 뺄셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-01"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "혼합 계산의 덧셈·뺄셈 부분을 수행하려면 세 자리 수 덧셈·뺄셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-04",
@@ -53,8 +94,43 @@
       "conceptName": "자연수의 곱셈",
       "summary": "곱하는 수가 한 자리 수 또는 두 자리 수인 곱셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-01",
+        "6수01-05",
+        "6수01-09",
+        "6수01-13"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "혼합 계산의 곱셈 부분을 수행하려면 자연수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-05",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "배수는 곱셈으로 만들어지므로 자연수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-09",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "분자·분모의 곱을 처리하려면 자연수의 곱셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-13",
+          "type": "supports",
+          "strength": 0.75,
+          "rationale": "소수의 곱은 자연수 곱셈 후 소수점을 처리하는 것이므로 자연수의 곱셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-06",
@@ -64,10 +140,53 @@
       "conceptName": "나눗셈의 몫과 나머지",
       "summary": "나누는 수가 한 자리 수인 나눗셈의 계산 원리를 이해하고 그 계산을 할 수 있으며, 나눗셈에서 몫과 나머지의 의미를 안다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6수01-01",
+        "6수01-04",
+        "6수01-10",
+        "6수04-01"
+      ],
       "kslLinks": [],
       "misconception": "나누어떨어지지 않을 때 나머지를 무시하거나 잘못 다룬다. 몫과 나머지의 의미를 실물 분배로 다시 세운다.",
-      "fix": "먼저 ‘나눗셈의 몫과 나머지’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘나눗셈의 몫과 나머지’부터 다시 확인하면 바로잡을 수 있어요.",
+      "successorEdges": [
+        {
+          "to": "6수01-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "혼합 계산의 나눗셈 부분을 수행하려면 나눗셈의 몫·나머지 계산이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "약수는 나누어떨어짐으로 정의되므로 나눗셈의 몫·나머지 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-10",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "(자연수)÷(자연수)의 몫을 다루려면 나눗셈의 몫·나머지 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수04-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "평균은 (자료 값의 합)÷(개수)이므로 나눗셈의 몫·나머지 계산이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "4수01-06",
+          "type": "error_related",
+          "errorPattern": "나누어떨어지지 않을 때 나머지를 무시하거나 잘못 다룬다. 몫과 나머지의 의미를 실물 분배로 다시 세운다.",
+          "fix": "먼저 ‘나눗셈의 몫과 나머지’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "4수01-08",
@@ -77,8 +196,19 @@
       "conceptName": "어림셈",
       "summary": "자연수의 덧셈, 뺄셈, 곱셈, 나눗셈과 관련한 여러 가지 상황에서 어림셈을 할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-03"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-03",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "올림·버림·반올림은 4학년 어림셈 경험을 형식화한 것이므로 어림셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-09",
@@ -88,8 +218,35 @@
       "conceptName": "분수의 의미",
       "summary": "양의 등분할을 통하여 분수의 필요성을 인식하고, 분수를 이해하고 읽고 쓸 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-10",
+        "6수01-12",
+        "6수02-02"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-10",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "몫을 분수로 나타내려면 등분할로서의 분수 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-12",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "분수와 소수를 같은 양의 두 표현으로 잇는 데 분수의 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수02-02",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "두 양의 크기를 비교해 비로 나타내는 데 분수(부분-전체) 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-10",
@@ -99,8 +256,27 @@
       "conceptName": "분수의 종류",
       "summary": "단위분수, 진분수, 가분수, 대분수를 알고, 그 관계를 이해한다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-06",
+        "6수01-09"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "약분·통분은 분수를 대상으로 하므로 진분수·가분수·대분수 등 분수의 종류 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-09",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "분수의 곱셈을 다루려면 진분수·가분수·대분수의 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-11",
@@ -110,8 +286,19 @@
       "conceptName": "분수의 크기 비교",
       "summary": "분모가 같은 분수끼리, 단위분수끼리 크기를 비교하고 그 방법을 설명할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-07"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-07",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "분모가 같은·단위분수 크기 비교 경험 위에서 분모가 다른 경우로 확장된다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-12",
@@ -121,8 +308,19 @@
       "conceptName": "소수 한 자리 수",
       "summary": "분모가 10인 진분수와 연결하여 소수 한 자리 수를 이해하고 읽고 쓸 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-12"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-12",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "분수와 소수의 관계를 다루려면 분모가 10인 분수와 연결된 소수 한 자리 수 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-13",
@@ -132,8 +330,19 @@
       "conceptName": "소수 두·세 자리 수",
       "summary": "자릿값의 원리를 바탕으로 소수 두 자리 수와 소수 세 자리 수를 이해하고 읽고 쓸 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-14"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-14",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "몫의 소수 표현을 읽고 쓰려면 소수 두·세 자리 수의 자릿값 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-15",
@@ -143,8 +352,19 @@
       "conceptName": "분모가 같은 분수의 덧셈과 뺄셈",
       "summary": "분모가 같은 분수의 덧셈과 뺄셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-08"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-08",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "통분 후의 계산은 분모가 같은 분수의 덧셈·뺄셈으로 귀결되므로 그 계산이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수01-16",
@@ -154,41 +374,93 @@
       "conceptName": "소수의 덧셈과 뺄셈",
       "summary": "소수 두 자리 수의 범위에서 소수의 덧셈과 뺄셈의 계산 원리를 이해하고 그 계산을 할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-13",
+        "6수01-15"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수01-13",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "소수의 곱셈을 다루려면 소수의 덧셈·뺄셈으로 소수 연산 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-15",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "소수의 나눗셈 과정의 덧셈·뺄셈 처리를 위해 소수의 덧셈·뺄셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수02-01",
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "변화와 관계",
-      "conceptName": "규칙 찾기",
+      "conceptName": "규칙을 수나 식으로",
       "summary": "다양한 변화 규칙을 찾아 설명하고, 그 규칙을 수나 식으로 나타낼 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수02-01"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수02-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "대응 관계의 규칙을 표에서 찾아 식으로 나타내려면 규칙 찾기가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수02-03",
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "변화와 관계",
-      "conceptName": "등호와 식",
+      "conceptName": "등호와 동치",
       "summary": "등호를 사용하여 크기가 같은 두 양의 관계를 식으로 나타낼 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수02-01"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수02-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "대응 관계를 □·△ 등을 써서 식으로 나타내려면 등호와 식의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수03-04",
       "gradeBand": "3-4",
       "subject": "수학",
       "domain": "도형과 측정",
-      "conceptName": "밀기·뒤집기·돌리기",
+      "conceptName": "평면도형의 이동",
       "summary": "구체물이나 평면도형의 밀기, 뒤집기, 돌리기 활동을 통하여 그 변화를 이해한다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-02"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수03-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "선대칭·점대칭은 뒤집기·돌리기의 결과를 형식화한 것이므로 밀기·뒤집기·돌리기가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수03-06",
@@ -198,8 +470,27 @@
       "conceptName": "원의 구성 요소",
       "summary": "원의 중심, 반지름, 지름을 이해하고, 그 성질을 안다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-07",
+        "6수03-15"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수03-07",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "원기둥·원뿔·구를 다루려면 원의 중심·반지름·지름 등 원의 구성 요소가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-15",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "원주율은 원주와 지름의 비이므로 원의 중심·반지름·지름이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수03-08",
@@ -209,8 +500,19 @@
       "conceptName": "이등변삼각형·정삼각형",
       "summary": "여러 가지 모양의 삼각형에 대한 분류 활동을 통하여 이등변삼각형, 정삼각형을 이해하고, 그 성질을 탐구하고 설명할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-01"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수03-01",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "합동인 도형의 성질을 다루려면 이등변삼각형·정삼각형의 성질 탐구 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수03-10",
@@ -220,8 +522,51 @@
       "conceptName": "여러 가지 사각형",
       "summary": "여러 가지 모양의 사각형에 대한 분류 활동을 통하여 직사각형, 정사각형, 사다리꼴, 평행사변형, 마름모를 이해하고, 그 성질을 탐구하고 설명할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-01",
+        "6수03-02",
+        "6수03-03",
+        "6수03-11",
+        "6수03-14"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수03-01",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "합동을 여러 도형에서 판단하려면 여러 가지 사각형의 성질 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-02",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "대칭 도형을 그리고 판단하려면 여러 가지 사각형의 성질이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "직육면체·정육면체의 면은 사각형이므로 여러 가지 사각형의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-11",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "기본 평면도형의 둘레를 구하려면 여러 가지 사각형 등 평면도형의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-14",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "평행사변형·삼각형·사다리꼴·마름모를 다루려면 여러 가지 사각형의 성질이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수03-11",
@@ -231,8 +576,19 @@
       "conceptName": "다각형과 정다각형",
       "summary": "다각형과 정다각형을 이해한다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-05"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수03-05",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "각기둥·각뿔의 밑면은 다각형이므로 다각형과 정다각형의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수03-15",
@@ -242,8 +598,27 @@
       "conceptName": "길이 단위(mm·km)",
       "summary": "길이 단위 1mm와 1km를 알고, 이를 이용하여 길이를 측정하고 어림하며 수학의 유용성을 인식할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-11",
+        "6수03-12"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수03-11",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "둘레를 측정·계산하려면 길이 단위(mm·km)의 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-12",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "넓이 단위를 도입하려면 길이 단위의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수04-01",
@@ -253,8 +628,27 @@
       "conceptName": "그림그래프·막대그래프",
       "summary": "자료를 수집하여 그림그래프나 막대그래프로 나타내고 해석할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수04-01",
+        "6수04-02"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수04-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "평균을 위해 자료를 수집·표현하려면 그림그래프·막대그래프로 자료를 다룬 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수04-02",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "띠그래프·원그래프로 자료를 나타내려면 그림그래프·막대그래프 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "4수04-03",
@@ -264,8 +658,19 @@
       "conceptName": "자료 수집과 그래프 표현",
       "summary": "탐구 문제를 해결하기 위해 자료를 수집, 정리하여 막대그래프나 꺾은선그래프로 나타내고 해석할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수04-03"
+      ],
+      "kslLinks": [],
+      "successorEdges": [
+        {
+          "to": "6수04-03",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "자료를 수집·정리해 적절한 그래프로 나타내는 데 4학년의 자료 수집·그래프 표현이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수01-01",
@@ -280,7 +685,35 @@
         "4수01-06"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수01-03",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "혼합 계산의 덧셈·뺄셈 부분을 수행하려면 세 자리 수 덧셈·뺄셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "혼합 계산의 곱셈 부분을 수행하려면 자연수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "혼합 계산의 나눗셈 부분을 수행하려면 나눗셈의 몫·나머지 계산이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수01-02",
@@ -294,7 +727,28 @@
         "4수01-02"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수01-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "수의 범위를 다루려면 큰 수의 자릿값과 기수법을 먼저 이해해야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "이상·이하·초과·미만으로 범위를 나타내려면 수의 계열과 크기 비교가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수01-03",
@@ -308,7 +762,28 @@
         "4수01-01"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수01-08",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "올림·버림·반올림은 4학년 어림셈 경험을 형식화한 것이므로 어림셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-01",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "어림값의 자릿값을 다루려면 큰 수의 자릿값 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수01-04",
@@ -320,9 +795,35 @@
       "prerequisites": [
         "4수01-06"
       ],
-      "successors": [],
+      "successors": [
+        "6수01-06"
+      ],
       "kslLinks": [
         "KSL-어휘-학습도구어"
+      ],
+      "prereqEdges": [
+        {
+          "to": "4수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "약수는 나누어떨어짐으로 정의되므로 나눗셈의 몫·나머지 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "약분은 분모·분자의 공약수로 나누는 것이므로 약수·공약수가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
       ]
     },
     {
@@ -335,8 +836,34 @@
       "prerequisites": [
         "4수01-04"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-06"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수01-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "배수는 곱셈으로 만들어지므로 자연수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "통분은 분모의 공배수를 공통분모로 삼으므로 배수·공배수가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수01-06",
@@ -350,9 +877,65 @@
         "6수01-05",
         "4수01-10"
       ],
-      "successors": [],
+      "successors": [
+        "6수01-07",
+        "6수01-08",
+        "6수01-11"
+      ],
       "kslLinks": [
         "KSL-어휘-학습도구어"
+      ],
+      "prereqEdges": [
+        {
+          "to": "6수01-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "약분은 분모·분자의 공약수로 나누는 것이므로 약수·공약수가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-05",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "통분은 분모의 공배수를 공통분모로 삼으므로 배수·공배수가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-10",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "약분·통분은 분수를 대상으로 하므로 진분수·가분수·대분수 등 분수의 종류 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-07",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "분모가 다른 분수의 크기 비교는 통분으로 분모를 같게 맞춘 뒤 가능하므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-08",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "분모가 다른 분수의 덧셈·뺄셈은 통분으로 분모를 같게 만든 뒤 계산하므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-11",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "분수의 나눗셈 과정에서 통분·약분이 쓰이므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
       ]
     },
     {
@@ -367,7 +950,29 @@
         "4수01-11"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "분모가 다른 분수의 크기 비교는 통분으로 분모를 같게 맞춘 뒤 가능하므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-11",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "분모가 같은·단위분수 크기 비교 경험 위에서 분모가 다른 경우로 확장된다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      }
     },
     {
       "code": "6수01-08",
@@ -383,7 +988,37 @@
       "successors": [],
       "kslLinks": [],
       "misconception": "학생이 1/2 + 1/3 을 2/5 로 계산(분모끼리·분자끼리 더함).",
-      "fix": "분모가 다르면 한 조각의 크기가 달라 바로 못 더함을 그림으로 보이고, 통분으로 조각 크기를 같게 맞춘 뒤 더하게 한다."
+      "fix": "분모가 다르면 한 조각의 크기가 달라 바로 못 더함을 그림으로 보이고, 통분으로 조각 크기를 같게 맞춘 뒤 더하게 한다.",
+      "prereqEdges": [
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "분모가 다른 분수의 덧셈·뺄셈은 통분으로 분모를 같게 만든 뒤 계산하므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-15",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "통분 후의 계산은 분모가 같은 분수의 덧셈·뺄셈으로 귀결되므로 그 계산이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "misconceptionEdges": [
+        {
+          "to": "6수01-08",
+          "type": "error_related",
+          "errorPattern": "학생이 1/2 + 1/3 을 2/5 로 계산(분모끼리·분자끼리 더함).",
+          "fix": "분모가 다르면 한 조각의 크기가 달라 바로 못 더함을 그림으로 보이고, 통분으로 조각 크기를 같게 맞춘 뒤 더하게 한다."
+        }
+      ]
     },
     {
       "code": "6수01-09",
@@ -396,8 +1031,41 @@
         "4수01-10",
         "4수01-04"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-11"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수01-10",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "분수의 곱셈을 다루려면 진분수·가분수·대분수의 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-04",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "분자·분모의 곱을 처리하려면 자연수의 곱셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-11",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "분수의 나눗셈은 역수를 곱하는 것으로 환원되므로 분수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수01-10",
@@ -410,10 +1078,51 @@
         "4수01-06",
         "4수01-09"
       ],
-      "successors": [],
+      "successors": [
+        "6수01-14"
+      ],
       "kslLinks": [],
       "misconception": "학생이 (분수)÷(분수)를 분자끼리·분모끼리 나누려 한다. 역수를 곱하는 원리를 그림·동치로 다시 세운다.",
-      "fix": "먼저 ‘분수의 곱셈’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘분수의 곱셈’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "4수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "(자연수)÷(자연수)의 몫을 다루려면 나눗셈의 몫·나머지 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-09",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "몫을 분수로 나타내려면 등분할로서의 분수 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-14",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "몫을 소수로 나타내는 것은 몫을 분수로 나타내기를 십진 표현으로 바꾼 것이므로 그 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "6수01-10",
+          "type": "error_related",
+          "errorPattern": "학생이 (분수)÷(분수)를 분자끼리·분모끼리 나누려 한다. 역수를 곱하는 원리를 그림·동치로 다시 세운다.",
+          "fix": "먼저 ‘분수의 곱셈’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수01-11",
@@ -429,7 +1138,37 @@
       "successors": [],
       "kslLinks": [],
       "misconception": "학생이 (분수)÷(분수)를 분자끼리·분모끼리 나누려 한다. 역수를 곱하는 원리를 그림·동치로 다시 세운다.",
-      "fix": "먼저 ‘분수의 곱셈’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘분수의 곱셈’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "6수01-09",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "분수의 나눗셈은 역수를 곱하는 것으로 환원되므로 분수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "분수의 나눗셈 과정에서 통분·약분이 쓰이므로 약분·통분이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "misconceptionEdges": [
+        {
+          "to": "6수01-11",
+          "type": "error_related",
+          "errorPattern": "학생이 (분수)÷(분수)를 분자끼리·분모끼리 나누려 한다. 역수를 곱하는 원리를 그림·동치로 다시 세운다.",
+          "fix": "먼저 ‘분수의 곱셈’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수01-12",
@@ -442,8 +1181,49 @@
         "4수01-12",
         "4수01-09"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수01-13",
+        "6수02-03"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수01-12",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "분수와 소수의 관계를 다루려면 분모가 10인 분수와 연결된 소수 한 자리 수 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-09",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "분수와 소수를 같은 양의 두 표현으로 잇는 데 분수의 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-13",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "소수점 위치를 자릿값으로 정당화하려면 분수와 소수의 관계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수02-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "비율을 분수·소수·백분율로 바꾸려면 분수와 소수의 관계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수01-13",
@@ -457,10 +1237,57 @@
         "4수01-04",
         "6수01-12"
       ],
-      "successors": [],
+      "successors": [
+        "6수01-15"
+      ],
       "kslLinks": [],
       "misconception": "곱한 뒤 소수점을 잘못 찍는다(자릿수 합을 안 셈). 분수와 소수의 관계로 자릿값을 다시 확인하게 한다.",
-      "fix": "먼저 ‘분수와 소수의 관계’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘분수와 소수의 관계’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "4수01-16",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "소수의 곱셈을 다루려면 소수의 덧셈·뺄셈으로 소수 연산 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-04",
+          "type": "supports",
+          "strength": 0.75,
+          "rationale": "소수의 곱은 자연수 곱셈 후 소수점을 처리하는 것이므로 자연수의 곱셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-12",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "소수점 위치를 자릿값으로 정당화하려면 분수와 소수의 관계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수01-15",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "소수의 나눗셈은 소수 곱셈과 역연산 관계로 이어지므로 소수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "6수01-13",
+          "type": "error_related",
+          "errorPattern": "곱한 뒤 소수점을 잘못 찍는다(자릿수 합을 안 셈). 분수와 소수의 관계로 자릿값을 다시 확인하게 한다.",
+          "fix": "먼저 ‘분수와 소수의 관계’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수01-14",
@@ -474,7 +1301,28 @@
         "4수01-13"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수01-10",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "몫을 소수로 나타내는 것은 몫을 분수로 나타내기를 십진 표현으로 바꾼 것이므로 그 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-13",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "몫의 소수 표현을 읽고 쓰려면 소수 두·세 자리 수의 자릿값 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수01-15",
@@ -488,7 +1336,28 @@
         "4수01-16"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수01-13",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "소수의 나눗셈은 소수 곱셈과 역연산 관계로 이어지므로 소수의 곱셈이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-16",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "소수의 나눗셈 과정의 덧셈·뺄셈 처리를 위해 소수의 덧셈·뺄셈이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수02-01",
@@ -502,7 +1371,29 @@
         "4수02-03"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수02-01",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "대응 관계의 규칙을 표에서 찾아 식으로 나타내려면 규칙 찾기가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수02-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "대응 관계를 □·△ 등을 써서 식으로 나타내려면 등호와 식의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      }
     },
     {
       "code": "6수02-02",
@@ -514,9 +1405,35 @@
       "prerequisites": [
         "4수01-09"
       ],
-      "successors": [],
+      "successors": [
+        "6수02-03"
+      ],
       "kslLinks": [
         "KSL-어휘-학습도구어"
+      ],
+      "prereqEdges": [
+        {
+          "to": "4수01-09",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "두 양의 크기를 비교해 비로 나타내는 데 분수(부분-전체) 의미가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수02-03",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "비율은 기준량에 대한 비교하는 양의 비이므로 비의 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
       ]
     },
     {
@@ -530,12 +1447,69 @@
         "6수02-02",
         "6수01-12"
       ],
-      "successors": [],
+      "successors": [
+        "6수02-04",
+        "6수04-02",
+        "6수04-05"
+      ],
       "kslLinks": [
         "KSL-어휘-학습도구어"
       ],
       "misconception": "비 '2:3'과 비율 '2/3'를 같은 것으로 여긴다. 기준량과 비교하는 양을 구분해 비율의 의미를 다시 세운다.",
-      "fix": "먼저 ‘비’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘비’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "6수02-02",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "비율은 기준량에 대한 비교하는 양의 비이므로 비의 개념이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수01-12",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "비율을 분수·소수·백분율로 바꾸려면 분수와 소수의 관계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수02-04",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "비례식은 비율이 같은 두 비를 등식으로 놓는 것이므로 비율이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수04-02",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "띠그래프·원그래프는 부분의 비율을 길이·각으로 나타내므로 비율이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수04-05",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "가능성을 0과 1 사이의 수(분수·소수·백분율)로 나타내려면 비율이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "6수02-03",
+          "type": "error_related",
+          "errorPattern": "비 '2:3'과 비율 '2/3'를 같은 것으로 여긴다. 기준량과 비교하는 양을 구분해 비율의 의미를 다시 세운다.",
+          "fix": "먼저 ‘비’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수02-04",
@@ -547,8 +1521,34 @@
       "prerequisites": [
         "6수02-03"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수02-05"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수02-03",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "비례식은 비율이 같은 두 비를 등식으로 놓는 것이므로 비율이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      },
+      "successorEdges": [
+        {
+          "to": "6수02-05",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "비례배분은 비례식의 성질을 양의 분배에 적용한 것이므로 비례식이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수02-05",
@@ -561,7 +1561,22 @@
         "6수02-04"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수02-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "비례배분은 비례식의 성질을 양의 분배에 적용한 것이므로 비례식이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25",
+        "pilotCandidate": true
+      }
     },
     {
       "code": "6수03-01",
@@ -575,7 +1590,28 @@
         "4수03-10"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수03-08",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "합동인 도형의 성질을 다루려면 이등변삼각형·정삼각형의 성질 탐구 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수03-10",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "합동을 여러 도형에서 판단하려면 여러 가지 사각형의 성질 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-02",
@@ -589,7 +1625,28 @@
         "4수03-10"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수03-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "선대칭·점대칭은 뒤집기·돌리기의 결과를 형식화한 것이므로 밀기·뒤집기·돌리기가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수03-10",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "대칭 도형을 그리고 판단하려면 여러 가지 사각형의 성질이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-03",
@@ -601,8 +1658,65 @@
       "prerequisites": [
         "4수03-10"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-04",
+        "6수03-05",
+        "6수03-09",
+        "6수03-17",
+        "6수03-19"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수03-10",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "직육면체·정육면체의 면은 사각형이므로 여러 가지 사각형의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-04",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "겨냥도·전개도는 직육면체·정육면체를 평면에 펼친 표현이므로 그 입체 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-05",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "각기둥·각뿔의 구성 요소를 다루려면 직육면체·정육면체의 면·모서리·꼭짓점 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-09",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "쌓기나무로 만든 입체를 다루려면 직육면체 등 입체도형의 기본 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-17",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "직육면체·정육면체의 겉넓이를 구하려면 그 입체의 면 구성이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-19",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "부피를 구하려면 직육면체·정육면체의 입체 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-04",
@@ -614,8 +1728,41 @@
       "prerequisites": [
         "6수03-03"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-06",
+        "6수03-08"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-03",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "겨냥도·전개도는 직육면체·정육면체를 평면에 펼친 표현이므로 그 입체 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "전개도를 그리는 방법은 직육면체의 겨냥도·전개도 경험에서 이어진다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-08",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "전개도를 그리는 방법은 직육면체의 겨냥도·전개도 경험에서 이어진다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-05",
@@ -628,8 +1775,40 @@
         "6수03-03",
         "4수03-11"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-06"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "각기둥·각뿔의 구성 요소를 다루려면 직육면체·정육면체의 면·모서리·꼭짓점 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수03-11",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "각기둥·각뿔의 밑면은 다각형이므로 다각형과 정다각형의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-06",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "각기둥의 전개도를 그리려면 각기둥의 구성 요소가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-06",
@@ -643,7 +1822,28 @@
         "6수03-04"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-05",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "각기둥의 전개도를 그리려면 각기둥의 구성 요소가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-04",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "전개도를 그리는 방법은 직육면체의 겨냥도·전개도 경험에서 이어진다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-07",
@@ -655,8 +1855,41 @@
       "prerequisites": [
         "4수03-06"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-08",
+        "6수03-15"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수03-06",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "원기둥·원뿔·구를 다루려면 원의 중심·반지름·지름 등 원의 구성 요소가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-08",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "원기둥의 전개도를 그리려면 원기둥의 구성 요소가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-15",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "원주율을 원 모양 물체에서 탐구하려면 원기둥·원뿔·구 등 원 관련 입체 경험이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-08",
@@ -670,7 +1903,28 @@
         "6수03-04"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-07",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "원기둥의 전개도를 그리려면 원기둥의 구성 요소가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-04",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "전개도를 그리는 방법은 직육면체의 겨냥도·전개도 경험에서 이어진다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-09",
@@ -682,8 +1936,33 @@
       "prerequisites": [
         "6수03-03"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-10"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "쌓기나무로 만든 입체를 다루려면 직육면체 등 입체도형의 기본 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-10",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "위·앞·옆에서 본 모양을 다루려면 쌓기나무 개수 세기로 입체를 분석하는 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-10",
@@ -696,7 +1975,21 @@
         "6수03-09"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-09",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "위·앞·옆에서 본 모양을 다루려면 쌓기나무 개수 세기로 입체를 분석하는 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-11",
@@ -709,8 +2002,40 @@
         "4수03-10",
         "4수03-15"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-13"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수03-10",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "기본 평면도형의 둘레를 구하려면 여러 가지 사각형 등 평면도형의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수03-15",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "둘레를 측정·계산하려면 길이 단위(mm·km)의 이해가 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-13",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "직사각형의 넓이를 다루려면 평면도형의 둘레 등 측정 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-12",
@@ -722,8 +2047,41 @@
       "prerequisites": [
         "4수03-15"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-13",
+        "6수03-18"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수03-15",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "넓이 단위를 도입하려면 길이 단위의 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-13",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "넓이를 수로 나타내려면 넓이 단위(cm²·m²)가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-18",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "부피 단위(cm³·m³)는 넓이 단위(cm²·m²)의 확장이므로 넓이 단위가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-13",
@@ -736,10 +2094,66 @@
         "6수03-11",
         "6수03-12"
       ],
-      "successors": [],
+      "successors": [
+        "6수03-14",
+        "6수03-16",
+        "6수03-17"
+      ],
       "kslLinks": [],
       "misconception": "둘레를 구해야 할 때 넓이를 구하거나 단위(cm vs cm²)를 혼동한다. 단위넓이로 '몇 개분'인지 다시 세우게 한다.",
-      "fix": "먼저 ‘둘레’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘둘레’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "6수03-11",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "직사각형의 넓이를 다루려면 평면도형의 둘레 등 측정 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-12",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "넓이를 수로 나타내려면 넓이 단위(cm²·m²)가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-14",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "여러 다각형의 넓이는 직사각형 넓이를 기준으로 추론하므로 직사각형·정사각형의 넓이가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-16",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "원의 넓이를 직사각형으로 등적변형해 구하므로 직사각형의 넓이가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-17",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "겉넓이는 면(직사각형)들의 넓이의 합이므로 직사각형·정사각형의 넓이가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "misconceptionEdges": [
+        {
+          "to": "6수03-13",
+          "type": "error_related",
+          "errorPattern": "둘레를 구해야 할 때 넓이를 구하거나 단위(cm vs cm²)를 혼동한다. 단위넓이로 '몇 개분'인지 다시 세우게 한다.",
+          "fix": "먼저 ‘둘레’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수03-14",
@@ -753,7 +2167,28 @@
         "4수03-10"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-13",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "여러 다각형의 넓이는 직사각형 넓이를 기준으로 추론하므로 직사각형·정사각형의 넓이가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수03-10",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "평행사변형·삼각형·사다리꼴·마름모를 다루려면 여러 가지 사각형의 성질이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-15",
@@ -766,8 +2201,40 @@
         "6수03-07",
         "4수03-06"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-16"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-07",
+          "type": "supports",
+          "strength": 0.7,
+          "rationale": "원주율을 원 모양 물체에서 탐구하려면 원기둥·원뿔·구 등 원 관련 입체 경험이 받쳐줘야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수03-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "원주율은 원주와 지름의 비이므로 원의 중심·반지름·지름이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-16",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "원주와 원의 넓이를 구하려면 원주율이 일정한 값임이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-16",
@@ -781,7 +2248,28 @@
         "6수03-13"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-15",
+          "type": "prerequisite",
+          "strength": 0.95,
+          "rationale": "원주와 원의 넓이를 구하려면 원주율이 일정한 값임이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-13",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "원의 넓이를 직사각형으로 등적변형해 구하므로 직사각형의 넓이가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-17",
@@ -795,7 +2283,28 @@
         "6수03-13"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "직육면체·정육면체의 겉넓이를 구하려면 그 입체의 면 구성이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-13",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "겉넓이는 면(직사각형)들의 넓이의 합이므로 직사각형·정사각형의 넓이가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수03-18",
@@ -807,8 +2316,33 @@
       "prerequisites": [
         "6수03-12"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수03-19"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수03-12",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "부피 단위(cm³·m³)는 넓이 단위(cm²·m²)의 확장이므로 넓이 단위가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수03-19",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "부피를 수로 나타내려면 부피 단위(cm³·m³)가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수03-19",
@@ -824,7 +2358,36 @@
       "successors": [],
       "kslLinks": [],
       "misconception": "평면(넓이)과 공간(부피)의 단위·의미를 섞어 쓴다. 단위넓이·단위부피의 차이를 직접 세어 구분하게 한다.",
-      "fix": "먼저 ‘넓이’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘넓이’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "6수03-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "부피를 구하려면 직육면체·정육면체의 입체 이해가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수03-18",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "부피를 수로 나타내려면 부피 단위(cm³·m³)가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "misconceptionEdges": [
+        {
+          "to": "6수03-19",
+          "type": "error_related",
+          "errorPattern": "평면(넓이)과 공간(부피)의 단위·의미를 섞어 쓴다. 단위넓이·단위부피의 차이를 직접 세어 구분하게 한다.",
+          "fix": "먼저 ‘넓이’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수04-01",
@@ -842,7 +2405,36 @@
         "KSL-어휘-학습도구어"
       ],
       "misconception": "학생이 평균을 최빈값·중앙값과 혼동한다. (합)÷(개수)로 '고르게 나눈 값'임을 자료를 옮겨 담으며 이해하게 한다.",
-      "fix": "먼저 ‘평균’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘평균’부터 다시 확인하면 바로잡을 수 있어요.",
+      "prereqEdges": [
+        {
+          "to": "4수04-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "평균을 위해 자료를 수집·표현하려면 그림그래프·막대그래프로 자료를 다룬 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수01-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "평균은 (자료 값의 합)÷(개수)이므로 나눗셈의 몫·나머지 계산이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "misconceptionEdges": [
+        {
+          "to": "6수04-01",
+          "type": "error_related",
+          "errorPattern": "학생이 평균을 최빈값·중앙값과 혼동한다. (합)÷(개수)로 '고르게 나눈 값'임을 자료를 옮겨 담으며 이해하게 한다.",
+          "fix": "먼저 ‘평균’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "6수04-02",
@@ -855,8 +2447,40 @@
         "4수04-01",
         "6수02-03"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수04-03"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "4수04-01",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "띠그래프·원그래프로 자료를 나타내려면 그림그래프·막대그래프 경험이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수02-03",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "띠그래프·원그래프는 부분의 비율을 길이·각으로 나타내므로 비율이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수04-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "탐구 문제에 맞는 그래프를 고르려면 띠그래프·원그래프를 포함한 그래프 표현이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수04-03",
@@ -870,7 +2494,28 @@
         "4수04-03"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수04-02",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "탐구 문제에 맞는 그래프를 고르려면 띠그래프·원그래프를 포함한 그래프 표현이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "4수04-03",
+          "type": "prerequisite",
+          "strength": 0.8,
+          "rationale": "자료를 수집·정리해 적절한 그래프로 나타내는 데 4학년의 자료 수집·그래프 표현이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     },
     {
       "code": "6수04-04",
@@ -880,8 +2525,25 @@
       "conceptName": "사건이 일어날 가능성(말로 표현)",
       "summary": "사건이 일어날 가능성을 말로 표현하고 비교할 수 있다.",
       "prerequisites": [],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수04-05"
+      ],
+      "kslLinks": [],
+      "prereqNote": "도입 개념 — 선수 성취기준 없음(일상 상황 기반으로 가능성을 말로 도입하는 자료와 가능성 strand의 진입 노드).",
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수04-05",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "가능성을 수로 나타내기 전에 가능성을 말로 표현·비교하는 단계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수04-05",
@@ -894,8 +2556,40 @@
         "6수04-04",
         "6수02-03"
       ],
-      "successors": [],
-      "kslLinks": []
+      "successors": [
+        "6수04-06"
+      ],
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수04-04",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "가능성을 수로 나타내기 전에 가능성을 말로 표현·비교하는 단계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        },
+        {
+          "to": "6수02-03",
+          "type": "prerequisite",
+          "strength": 0.85,
+          "rationale": "가능성을 0과 1 사이의 수(분수·소수·백분율)로 나타내려면 비율이 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      },
+      "successorEdges": [
+        {
+          "to": "6수04-06",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "가능성에 근거해 판단하려면 가능성을 수로 표현하는 단계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ]
     },
     {
       "code": "6수04-06",
@@ -908,7 +2602,21 @@
         "6수04-05"
       ],
       "successors": [],
-      "kslLinks": []
+      "kslLinks": [],
+      "prereqEdges": [
+        {
+          "to": "6수04-05",
+          "type": "prerequisite",
+          "strength": 0.9,
+          "rationale": "가능성에 근거해 판단하려면 가능성을 수로 표현하는 단계가 선행되어야 한다.",
+          "source": "교육과정 계열"
+        }
+      ],
+      "prereqReview": {
+        "status": "inferred",
+        "by": null,
+        "date": "2026-06-25"
+      }
     }
   ]
 }

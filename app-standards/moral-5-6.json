@@ -14,7 +14,9 @@
       "conceptName": "성실과 자기 성장",
       "summary": "성실한 생활의 모범 사례를 탐색하고 시간 관리를 위한 생활을 계획하여 지속적인 자기 성장을 모색한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6도01-02"
+      ],
       "kslLinks": []
     },
     {
@@ -25,7 +27,9 @@
       "conceptName": "공감",
       "summary": "공감의 태도가 필요한 이유를 이해하고 도덕적 상상력을 바탕으로 대상과 상황에 따라 감정을 나누는 방법을 탐구하여 실천한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6도02-02"
+      ],
       "kslLinks": []
     },
     {
@@ -36,9 +40,19 @@
       "conceptName": "공정",
       "summary": "불공정의 사례를 탐구하고, 일상생활에서 공정의 가치를 추구하는 활동을 통해 실천 의지를 함양한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6도03-01",
+        "6도03-02"
+      ],
       "kslLinks": [],
-      "misconception": "공정을 늘 똑같이 나누는 것으로만 보아 처지가 다른 사람에 대한 배려를 놓친다."
+      "misconception": "공정을 늘 똑같이 나누는 것으로만 보아 처지가 다른 사람에 대한 배려를 놓친다.",
+      "misconceptionEdges": [
+        {
+          "to": "4도03-01",
+          "type": "error_related",
+          "errorPattern": "공정을 늘 똑같이 나누는 것으로만 보아 처지가 다른 사람에 대한 배려를 놓친다."
+        }
+      ]
     },
     {
       "code": "4도03-03",
@@ -48,7 +62,9 @@
       "conceptName": "통일의 필요성",
       "summary": "통일의 필요성을 이해하고, 통일 감수성을 길러 바람직한 통일의 방향을 모색한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6도03-03"
+      ],
       "kslLinks": []
     },
     {
@@ -59,7 +75,9 @@
       "conceptName": "자연과의 공생",
       "summary": "인간과 자연이 함께 살아야 하는 이유를 이해하고 공생을 위한 구체적인 실천 계획을 세우며 생태 감수성을 기른다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6도04-01"
+      ],
       "kslLinks": []
     },
     {
@@ -192,7 +210,9 @@
       "prerequisites": [
         "4도04-02"
       ],
-      "successors": [],
+      "successors": [
+        "6도04-02"
+      ],
       "kslLinks": []
     },
     {

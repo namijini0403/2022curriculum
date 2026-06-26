@@ -14,7 +14,9 @@
       "conceptName": "강세·리듬·억양 식별",
       "summary": "쉽고 간단한 단어, 어구, 문장을 듣고 강세, 리듬, 억양을 식별한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6영01-01"
+      ],
       "kslLinks": []
     },
     {
@@ -25,10 +27,20 @@
       "conceptName": "소리와 철자 관계 읽기",
       "summary": "소리와 철자의 관계를 이해하며 쉽고 간단한 단어, 어구, 문장을 소리 내어 읽는다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6영01-02"
+      ],
       "kslLinks": [],
       "misconception": "apple을 '아쁠레'처럼 철자 그대로 읽어 영어 소리-철자 규칙을 적용하지 못한다.",
-      "fix": "먼저 ‘파닉스(소리-철자 관계)’부터 다시 확인하면 바로잡을 수 있어요."
+      "fix": "먼저 ‘파닉스(소리-철자 관계)’부터 다시 확인하면 바로잡을 수 있어요.",
+      "misconceptionEdges": [
+        {
+          "to": "4영01-04",
+          "type": "error_related",
+          "errorPattern": "apple을 '아쁠레'처럼 철자 그대로 읽어 영어 소리-철자 규칙을 적용하지 못한다.",
+          "fix": "먼저 ‘파닉스(소리-철자 관계)’부터 다시 확인하면 바로잡을 수 있어요."
+        }
+      ]
     },
     {
       "code": "4영01-05",
@@ -38,7 +50,9 @@
       "conceptName": "단어·어구·문장 의미 이해",
       "summary": "쉽고 간단한 단어, 어구, 문장의 의미를 이해한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6영01-03"
+      ],
       "kslLinks": []
     },
     {
@@ -49,7 +63,9 @@
       "conceptName": "주변 주제 정보 파악",
       "summary": "자기 주변 주제에 관한 담화의 주요 정보를 파악한다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6영01-04"
+      ],
       "kslLinks": []
     },
     {
@@ -60,7 +76,9 @@
       "conceptName": "듣기·읽기 전략",
       "summary": "적절한 전략을 활용하여 담화나 문장을 듣거나 읽는다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6영01-07"
+      ],
       "kslLinks": []
     },
     {
@@ -71,7 +89,10 @@
       "conceptName": "소개·묘사 말하기·쓰기",
       "summary": "자신, 주변 사람이나 사물의 소개나 묘사를 쉽고 간단한 문장으로 말하거나 보고 쓴다.",
       "prerequisites": [],
-      "successors": [],
+      "successors": [
+        "6영02-04",
+        "6영02-08"
+      ],
       "kslLinks": []
     },
     {

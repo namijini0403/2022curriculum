@@ -159,7 +159,39 @@ exportKSL();
 function stripWiki(s) {
   return s.replace(/\[\[([^\]]+)\]\]/g, (_, x) => x.split("|")[0].trim());
 }
+// 노드 id(파일명 stem) → 그 노드가 정렬된 성취기준 코드 집합.
+// 오개념은 코드가 아니라 contradicts:: [[개념/스킬명]]으로 연결되므로, 그 개념/스킬의
+// aligns_to(코드)를 거쳐 2-홉으로 성취기준에 도달한다.
+function buildConceptCodeIndex() {
+  const idx = {};
+  for (const f of readdirSync(NODES).filter((x) => x.endsWith(".md"))) {
+    const t = readFileSync(path.join(NODES, f), "utf8");
+    const fm = (t.match(/^---\n([\s\S]*?)\n---/) || [])[1] || "";
+    const stem = path.basename(f, ".md");
+    const codes = new Set();
+    const sm = fm.match(/standards:\s*\[([^\]]*)\]/);
+    if (sm) for (const m of sm[1].matchAll(/"([^"]+)"/g)) codes.add(m[1]);
+    for (const m of t.matchAll(/aligns_to::\s*\[\[([^\]]+)\]\]/g)) {
+      const c = m[1].split("|")[0].trim();
+      if (/^\d[가-힣]\d/.test(c)) codes.add(c);
+    }
+    if (codes.size) idx[stem] = codes;
+  }
+  return idx;
+}
 function buildMisconceptionMap() {
+  const conceptCodes = buildConceptCodeIndex();
+  // rel:: [[대상]] 위키링크들의 대상 노드를 거쳐 도달하는 코드 집합.
+  const codesVia = (text, rels) => {
+    const out = new Set();
+    for (const rel of rels) {
+      for (const m of text.matchAll(new RegExp(`${rel}::\\s*\\[\\[([^\\]]+)\\]\\]`, "g"))) {
+        const tgt = m[1].split("|")[0].trim();
+        for (const c of conceptCodes[tgt] ?? []) out.add(c);
+      }
+    }
+    return out;
+  };
   const map = {};
   for (const f of readdirSync(NODES).filter((x) => x.endsWith(".md"))) {
     const t = readFileSync(path.join(NODES, f), "utf8");
@@ -168,11 +200,18 @@ function buildMisconceptionMap() {
     const mistake = (t.match(/^>\s*(.+)$/m) || [])[1] || "";
     if (!mistake) continue;
     const codes = new Set();
+    // 1) 직접 코드: frontmatter standards + 자체 aligns_to (가장 명시적, 최우선).
     const sm = fm.match(/standards:\s*\[([^\]]*)\]/);
     if (sm) for (const m of sm[1].matchAll(/"([^"]+)"/g)) codes.add(m[1]);
     for (const m of t.matchAll(/aligns_to::\s*\[\[([^\]]+)\]\]/g)) {
       const c = m[1].split("|")[0].trim();
       if (/^\d[가-힣]\d/.test(c)) codes.add(c);
+    }
+    // 2) contradicts:: 대상(= 오개념이 어기는 올바른 개념/스킬)의 코드. 같은 성취기준이라 정확.
+    for (const c of codesVia(t, ["contradicts"])) codes.add(c);
+    // 3) 그래도 비면 약한 관계(requires/near/extends)로 폴백 — 선수개념 쪽 성취기준에라도 붙임.
+    if (codes.size === 0) {
+      for (const c of codesVia(t, ["requires", "near", "extends"])) codes.add(c);
     }
     if (codes.size === 0) continue;
     // fix: '## 바로잡기' 섹션(큐레이션 교정법) 우선, 없으면 requires(고치는 선수개념) 템플릿
@@ -208,6 +247,10 @@ function enrichWithMisconceptions() {
       if (m) {
         node.misconception = m.misconception;
         if (m.fix) node.fix = m.fix;
+        // P4 — 구조화 병렬 컨테이너(DRACONIS concept_relations.error_related와 1:1). flat 필드는 하위호환 유지.
+        node.misconceptionEdges = [
+          { to: node.code, type: "error_related", errorPattern: m.misconception, ...(m.fix ? { fix: m.fix } : {}) },
+        ];
         n++;
       }
     }
@@ -217,3 +260,87 @@ function enrichWithMisconceptions() {
   console.log(`오개념 맵 코드 ${Object.keys(map).length}개 → 병합 노드 ${total || "(파일별 표시)"}`);
 }
 enrichWithMisconceptions();
+
+// ── conceptName 단일 출처화: math-*.json의 conceptName을 20-nodes의 title(진실의 원천)로 동기화.
+//    math-5-6은 손유지 파일이라 과거엔 title과 따로 놀았음 → title을 canonical로 못박아 드리프트 제거.
+function syncMathConceptNames() {
+  const titleByCode = {};
+  for (const f of readdirSync(NODES).filter((x) => /^[246]수.*\.md$/.test(x))) {
+    const t = readFileSync(path.join(NODES, f), "utf8");
+    const fm = (t.match(/^---\n([\s\S]*?)\n---/) || [])[1] || "";
+    const id = ((fm.match(/^id:\s*(.+)$/m) || [])[1] || "").trim();
+    const title = ((fm.match(/^title:\s*(.+)$/m) || [])[1] || "").trim();
+    if (id && title) titleByCode[id] = title;
+  }
+  for (const f of readdirSync(APP).filter((x) => /^math-.*\.json$/.test(x))) {
+    const p = path.join(APP, f);
+    const doc = JSON.parse(readFileSync(p, "utf8"));
+    let n = 0;
+    for (const node of doc.nodes || []) {
+      const t = titleByCode[node.code];
+      if (t && node.conceptName !== t) { node.conceptName = t; n++; }
+    }
+    writeFileSync(p, JSON.stringify(doc, null, 2) + "\n", "utf8");
+    if (n) console.log(`${f}: conceptName 동기화 ${n} (←20-nodes title)`);
+  }
+}
+syncMathConceptNames();
+
+// ── successors 자동 파생: prerequisites(+prereqEdges)의 역방향을 각 파일 안에서 계산.
+//    손으로 적지 않는다(드리프트 방지). prerequisites: string[] 시그니처는 불변.
+//    같은 패스에서 dangling(미해결 참조) 0을 검증한다(회귀 금지).
+function deriveSuccessorsAndValidate() {
+  let danglingTotal = 0;
+  for (const f of readdirSync(APP).filter((x) => x.endsWith(".json"))) {
+    const p = path.join(APP, f);
+    const doc = JSON.parse(readFileSync(p, "utf8"));
+    const nodes = doc.nodes || [];
+    const codes = new Set(nodes.map((n) => n.code));
+
+    // 역방향 코드 맵 + 역방향 엣지 맵
+    const succ = new Map();      // code → Set<code>
+    const succEdges = new Map(); // code → [{to,type,strength,rationale,source}]
+    for (const n of nodes) {
+      for (const pre of n.prerequisites || []) {
+        if (!succ.has(pre)) succ.set(pre, new Set());
+        succ.get(pre).add(n.code);
+      }
+      for (const e of n.prereqEdges || []) {
+        if (!succEdges.has(e.to)) succEdges.set(e.to, []);
+        succEdges.get(e.to).push({
+          to: n.code, type: e.type, strength: e.strength,
+          rationale: e.rationale, source: e.source,
+        });
+      }
+    }
+
+    // dangling 검증: prerequisites/prereqEdges가 가리키는 코드는 반드시 노드로 존재
+    const dangling = [];
+    for (const n of nodes) {
+      for (const pre of n.prerequisites || []) if (!codes.has(pre)) dangling.push(`${n.code}→${pre}`);
+      for (const e of n.prereqEdges || []) if (!codes.has(e.to)) dangling.push(`${n.code}⇒${e.to}`);
+    }
+    danglingTotal += dangling.length;
+
+    // 기록(successors는 정렬해 결정적으로, successorEdges는 있을 때만)
+    for (const n of nodes) {
+      n.successors = [...(succ.get(n.code) || [])].sort((a, b) => a.localeCompare(b, "ko"));
+      const se = succEdges.get(n.code);
+      if (se && se.length) {
+        se.sort((a, b) => a.to.localeCompare(b.to, "ko"));
+        n.successorEdges = se;
+      } else if ("successorEdges" in n) {
+        delete n.successorEdges;
+      }
+    }
+
+    writeFileSync(p, JSON.stringify(doc, null, 2) + "\n", "utf8");
+    const withSucc = nodes.filter((n) => n.successors.length).length;
+    console.log(`${f}: successors 파생 ${withSucc}/${nodes.length} 노드` + (dangling.length ? `  ⚠ dangling ${dangling.length}: ${dangling.join(", ")}` : "  dangling 0"));
+  }
+  if (danglingTotal > 0) {
+    console.error(`\n❌ dangling 참조 ${danglingTotal}건 — 불변식 위반(회귀). 빌드 실패 처리.`);
+    process.exitCode = 1;
+  }
+}
+deriveSuccessorsAndValidate();
